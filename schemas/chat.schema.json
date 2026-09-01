@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "answer": { "type": "string" },
+    "exampleNl": { "type": "string" },
+    "exampleEn": { "type": "string" }
+  },
+  "required": ["answer", "exampleNl", "exampleEn"],
+  "additionalProperties": false
+}

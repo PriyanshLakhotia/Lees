@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-paper: var(--paper);
+  --color-level: var(--level);
+  --color-level-foreground: var(--level-foreground);
+  --font-sans: var(--font-ui);
+  --font-serif: var(--font-reading);
+  --radius-sm: calc(var(--radius) * 0.65);
+  --radius-md: calc(var(--radius) * 0.82);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.35);
+  --radius-2xl: calc(var(--radius) * 1.7);
+}
+
+:root {
+  --background: oklch(0.975 0.007 78);
+  --foreground: oklch(0.205 0.018 159);
+  --card: oklch(0.992 0.003 78);
+  --card-foreground: oklch(0.205 0.018 159);
+  --popover: oklch(0.995 0.003 78);
+  --popover-foreground: oklch(0.205 0.018 159);
+  --primary: oklch(0.335 0.065 166);
+  --primary-foreground: oklch(0.985 0.006 92);
+  --secondary: oklch(0.92 0.018 78);
+  --secondary-foreground: oklch(0.25 0.025 158);
+  --muted: oklch(0.935 0.012 78);
+  --muted-foreground: oklch(0.49 0.02 157);
+  --accent: oklch(0.91 0.03 155);
+  --accent-foreground: oklch(0.27 0.05 163);
+  --destructive: oklch(0.58 0.2 28);
+  --border: oklch(0.865 0.014 76);
+  --input: oklch(0.84 0.016 78);
+  --ring: oklch(0.48 0.08 165);
+  --paper: oklch(0.965 0.012 82);
+  --level: oklch(0.88 0.055 154);
+  --level-foreground: oklch(0.31 0.068 164);
+  --radius: 0.65rem;
+}
+
+.dark {
+  --background: oklch(0.18 0.016 158);
+  --foreground: oklch(0.94 0.01 82);
+  --card: oklch(0.215 0.018 158);
+  --card-foreground: oklch(0.94 0.01 82);
+  --popover: oklch(0.23 0.02 158);
+  --popover-foreground: oklch(0.94 0.01 82);
+  --primary: oklch(0.71 0.075 158);
+  --primary-foreground: oklch(0.18 0.02 162);
+  --secondary: oklch(0.27 0.02 158);
+  --secondary-foreground: oklch(0.92 0.01 82);
+  --muted: oklch(0.27 0.018 158);
+  --muted-foreground: oklch(0.7 0.02 95);
+  --accent: oklch(0.29 0.04 159);
+  --accent-foreground: oklch(0.92 0.015 94);
+  --destructive: oklch(0.68 0.18 28);
+  --border: oklch(0.35 0.018 158);
+  --input: oklch(0.38 0.02 158);
+  --ring: oklch(0.64 0.08 158);
+  --paper: oklch(0.195 0.014 155);
+  --level: oklch(0.31 0.05 157);
+  --level-foreground: oklch(0.82 0.07 155);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-[10px] font-semibold uppercase tracking-[0.11em] text-muted-foreground;
+  }
+
+  .field-label {
+    @apply text-[11px] font-semibold uppercase tracking-[0.08em] text-muted-foreground;
+  }
+
+  .article-title {
+    font-family: var(--font-reading), Georgia, serif;
+    @apply text-[clamp(2rem,4vw,3.35rem)] font-medium leading-[1.08] tracking-[-0.035em];
+  }
+
+  .article-copy {
+    font-family: var(--font-reading), Georgia, serif;
+    @apply text-[17px] leading-[1.9] text-foreground sm:text-[18px];
+  }
+
+  .explained-word {
+    font: inherit;
+    @apply cursor-pointer rounded-[3px] border-0 px-[1px] text-left text-inherit transition-colors hover:bg-primary/12 focus-visible:ring-2 focus-visible:ring-ring/50;
+  }
+
+  .explained-word-useful {
+    @apply border-b border-dotted border-primary/55 bg-primary/5;
+  }
+
+  .explained-word-advanced {
+    @apply border-b border-primary/70 bg-primary/8;
+  }
+
+  .story-card {
+    @apply block min-h-64 w-full rounded-2xl border border-border bg-card p-5 text-left transition-[border-color,box-shadow,transform] hover:-translate-y-0.5 hover:border-primary/35 hover:shadow-[0_12px_32px_rgba(29,43,37,0.07)] focus-visible:ring-2 focus-visible:ring-ring/50;
+  }
+
+  .job-card {
+    @apply rounded-xl border border-border bg-background p-3.5;
+  }
+
+  .job-card-error {
+    @apply border-destructive/25 bg-destructive/5;
+  }
+
+  .filter-tab {
+    @apply rounded-md px-1 py-1.5 text-[10px] font-medium text-muted-foreground transition-colors hover:text-foreground;
+  }
+
+  .filter-tab-active {
+    @apply bg-background text-foreground shadow-sm;
+  }
+
+  .status-dot {
+    @apply relative size-2 rounded-full bg-primary;
+  }
+
+  .status-dot::after {
+    content: '';
+    @apply absolute inset-0 animate-ping rounded-full bg-primary opacity-30;
+  }
+}

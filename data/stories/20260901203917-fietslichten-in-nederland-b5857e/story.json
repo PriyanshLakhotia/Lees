@@ -1,0 +1,916 @@
+{
+  "schemaVersion": 1,
+  "id": "20260901203917-fietslichten-in-nederland-b5857e",
+  "request": {
+    "type": "topic",
+    "topic": "netherlands",
+    "genre": "slice-of-life",
+    "idea": "how bicycle traffic lights work in the Netherlands",
+    "level": "A1",
+    "length": "short"
+  },
+  "title": "Fietslichten in Nederland",
+  "subtitle": "Rood, groen en veilig oversteken",
+  "summaryEnglish": "A simple explanation of how bicycle traffic lights guide cyclists at Dutch crossings.",
+  "paragraphs": [
+    "In Nederland hebben fietsers vaak een eigen verkeerslicht. Het licht staat naast of boven het fietspad. Soms zie je een fiets op het licht. Dan is het licht voor fietsers. Rood betekent: stop bij de witte streep. Groen betekent: je mag doorgaan. Geel betekent ook: stop, als dat nog kan.",
+    "Bij een druk kruispunt wachten fietsers op groen. Soms druk je op een knop. Die knop zegt aan het licht: hier wacht een fietser. Op andere plaatsen ziet een detector de fiets al. Dan hoeft een fietser niet altijd op een knop te drukken. Een klein lampje kan laten zien dat het licht je heeft gezien.",
+    "Soms krijgen alle fietsers tegelijk groen. Fietsers kunnen dan ook links afslaan. Kijk dan goed naar andere fietsers. Zij gaan misschien rechtdoor. Er is soms een bord: “Rechtsaf voor fietsers vrij”. Dan mag je bij rood rechts af. Maar je laat ander verkeer eerst gaan. Zo kunnen fietsers, auto’s en voetgangers veilig oversteken."
+  ],
+  "tags": ["Nederland", "fiets", "verkeer", "verkeerslichten"],
+  "sources": [
+    {
+      "title": "Reglement verkeersregels en verkeerstekens 1990, artikel 68",
+      "publisher": "wetten.nl",
+      "url": "https://wetten.overheid.nl/jci1.3%3Ac%3ABWBR0004825%26g%3D2023-01-01%26z%3D2025-07-29",
+      "publishedAt": "1990-09-01",
+      "retrievedAt": "2026-09-01T20:39:17.238Z"
+    },
+    {
+      "title": "Drukknop",
+      "publisher": "CROW Kennisbank",
+      "url": "https://kennisbank.crow.nl/public/gastgebruiker/VMGT/Handboek_verkeerslichtenregelingen_2022/Drukknop/114426",
+      "publishedAt": "2022-04-11",
+      "retrievedAt": "2026-09-01T20:39:17.238Z"
+    },
+    {
+      "title": "Alle fietsers gelijk groen",
+      "publisher": "CROW Kennisbank",
+      "url": "https://kennisbank.crow.nl/public/gastgebruiker/VMGT/Handboek_verkeerslichtenregelingen_2022/Alle_fietsers_gelijk_groen/114523",
+      "publishedAt": "2022-04-11",
+      "retrievedAt": "2026-09-01T20:39:17.238Z"
+    }
+  ],
+  "wordCount": 159,
+  "readingMinutes": 2,
+  "annotations": {
+    "in": {
+      "word": "in",
+      "lemma": "in",
+      "meaning": "in",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nederland": {
+      "word": "nederland",
+      "lemma": "Nederland",
+      "meaning": "the Netherlands",
+      "partOfSpeech": "name",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hebben": {
+      "word": "hebben",
+      "lemma": "hebben",
+      "meaning": "have",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "fietsers": {
+      "word": "fietsers",
+      "lemma": "fietser",
+      "meaning": "cyclists",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vaak": {
+      "word": "vaak",
+      "lemma": "vaak",
+      "meaning": "often",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "een": {
+      "word": "een",
+      "lemma": "een",
+      "meaning": "a",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eigen": {
+      "word": "eigen",
+      "lemma": "eigen",
+      "meaning": "own",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "verkeerslicht": {
+      "word": "verkeerslicht",
+      "lemma": "verkeerslicht",
+      "meaning": "traffic light",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "het": {
+      "word": "het",
+      "lemma": "het",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "licht": {
+      "word": "licht",
+      "lemma": "licht",
+      "meaning": "light",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "staat": {
+      "word": "staat",
+      "lemma": "staan",
+      "meaning": "stands",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "naast": {
+      "word": "naast",
+      "lemma": "naast",
+      "meaning": "next to",
+      "partOfSpeech": "preposition",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "of": {
+      "word": "of",
+      "lemma": "of",
+      "meaning": "or",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "boven": {
+      "word": "boven",
+      "lemma": "boven",
+      "meaning": "above",
+      "partOfSpeech": "preposition",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "fietspad": {
+      "word": "fietspad",
+      "lemma": "fietspad",
+      "meaning": "cycle path",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "soms": {
+      "word": "soms",
+      "lemma": "soms",
+      "meaning": "sometimes",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zie": {
+      "word": "zie",
+      "lemma": "zien",
+      "meaning": "see",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "je": {
+      "word": "je",
+      "lemma": "je",
+      "meaning": "you",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "fiets": {
+      "word": "fiets",
+      "lemma": "fiets",
+      "meaning": "bicycle",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "op": {
+      "word": "op",
+      "lemma": "op",
+      "meaning": "on",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dan": {
+      "word": "dan",
+      "lemma": "dan",
+      "meaning": "then",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "is": {
+      "word": "is",
+      "lemma": "zijn",
+      "meaning": "is",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "voor": {
+      "word": "voor",
+      "lemma": "voor",
+      "meaning": "for",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "rood": {
+      "word": "rood",
+      "lemma": "rood",
+      "meaning": "red",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "betekent": {
+      "word": "betekent",
+      "lemma": "betekenen",
+      "meaning": "means",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stop": {
+      "word": "stop",
+      "lemma": "stoppen",
+      "meaning": "stop",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "bij": {
+      "word": "bij",
+      "lemma": "bij",
+      "meaning": "at",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "de": {
+      "word": "de",
+      "lemma": "de",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "witte": {
+      "word": "witte",
+      "lemma": "wit",
+      "meaning": "white",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "streep": {
+      "word": "streep",
+      "lemma": "streep",
+      "meaning": "line",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "groen": {
+      "word": "groen",
+      "lemma": "groen",
+      "meaning": "green",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "mag": {
+      "word": "mag",
+      "lemma": "mogen",
+      "meaning": "may",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "doorgaan": {
+      "word": "doorgaan",
+      "lemma": "doorgaan",
+      "meaning": "continue",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geel": {
+      "word": "geel",
+      "lemma": "geel",
+      "meaning": "yellow",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ook": {
+      "word": "ook",
+      "lemma": "ook",
+      "meaning": "also",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "als": {
+      "word": "als",
+      "lemma": "als",
+      "meaning": "if",
+      "partOfSpeech": "conjunction",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dat": {
+      "word": "dat",
+      "lemma": "dat",
+      "meaning": "that",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nog": {
+      "word": "nog",
+      "lemma": "nog",
+      "meaning": "still",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kan": {
+      "word": "kan",
+      "lemma": "kunnen",
+      "meaning": "can",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "druk": {
+      "word": "druk",
+      "lemma": "druk",
+      "meaning": "busy",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kruispunt": {
+      "word": "kruispunt",
+      "lemma": "kruispunt",
+      "meaning": "intersection",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "wachten": {
+      "word": "wachten",
+      "lemma": "wachten",
+      "meaning": "wait",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "knop": {
+      "word": "knop",
+      "lemma": "knop",
+      "meaning": "button",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "die": {
+      "word": "die",
+      "lemma": "die",
+      "meaning": "that",
+      "partOfSpeech": "pronoun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zegt": {
+      "word": "zegt",
+      "lemma": "zeggen",
+      "meaning": "says",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "aan": {
+      "word": "aan",
+      "lemma": "aan",
+      "meaning": "to",
+      "partOfSpeech": "preposition",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hier": {
+      "word": "hier",
+      "lemma": "hier",
+      "meaning": "here",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "wacht": {
+      "word": "wacht",
+      "lemma": "wachten",
+      "meaning": "waits",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "fietser": {
+      "word": "fietser",
+      "lemma": "fietser",
+      "meaning": "cyclist",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "andere": {
+      "word": "andere",
+      "lemma": "ander",
+      "meaning": "other",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plaatsen": {
+      "word": "plaatsen",
+      "lemma": "plaats",
+      "meaning": "places",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ziet": {
+      "word": "ziet",
+      "lemma": "zien",
+      "meaning": "sees",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "detector": {
+      "word": "detector",
+      "lemma": "detector",
+      "meaning": "detector",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "al": {
+      "word": "al",
+      "lemma": "al",
+      "meaning": "already",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hoeft": {
+      "word": "hoeft",
+      "lemma": "hoeven",
+      "meaning": "needs to",
+      "partOfSpeech": "verb",
+      "difficulty": "advanced",
+      "exampleNl": "Je hoeft niet te rennen.",
+      "exampleEn": "You do not need to run."
+    },
+    "niet": {
+      "word": "niet",
+      "lemma": "niet",
+      "meaning": "not",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "altijd": {
+      "word": "altijd",
+      "lemma": "altijd",
+      "meaning": "always",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "te": {
+      "word": "te",
+      "lemma": "te",
+      "meaning": "to",
+      "partOfSpeech": "particle",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "drukken": {
+      "word": "drukken",
+      "lemma": "drukken",
+      "meaning": "press",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "klein": {
+      "word": "klein",
+      "lemma": "klein",
+      "meaning": "small",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "lampje": {
+      "word": "lampje",
+      "lemma": "lampje",
+      "meaning": "small lamp",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "laten": {
+      "word": "laten",
+      "lemma": "laten",
+      "meaning": "let",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zien": {
+      "word": "zien",
+      "lemma": "zien",
+      "meaning": "show",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heeft": {
+      "word": "heeft",
+      "lemma": "hebben",
+      "meaning": "has",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gezien": {
+      "word": "gezien",
+      "lemma": "zien",
+      "meaning": "seen",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "krijgen": {
+      "word": "krijgen",
+      "lemma": "krijgen",
+      "meaning": "get",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "alle": {
+      "word": "alle",
+      "lemma": "alle",
+      "meaning": "all",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "tegelijk": {
+      "word": "tegelijk",
+      "lemma": "tegelijk",
+      "meaning": "at the same time",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kunnen": {
+      "word": "kunnen",
+      "lemma": "kunnen",
+      "meaning": "can",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "links": {
+      "word": "links",
+      "lemma": "links",
+      "meaning": "left",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "afslaan": {
+      "word": "afslaan",
+      "lemma": "afslaan",
+      "meaning": "turn",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kijk": {
+      "word": "kijk",
+      "lemma": "kijken",
+      "meaning": "look",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "goed": {
+      "word": "goed",
+      "lemma": "goed",
+      "meaning": "carefully",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "naar": {
+      "word": "naar",
+      "lemma": "naar",
+      "meaning": "at",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zij": {
+      "word": "zij",
+      "lemma": "zij",
+      "meaning": "they",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gaan": {
+      "word": "gaan",
+      "lemma": "gaan",
+      "meaning": "go",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "misschien": {
+      "word": "misschien",
+      "lemma": "misschien",
+      "meaning": "perhaps",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "rechtdoor": {
+      "word": "rechtdoor",
+      "lemma": "rechtdoor",
+      "meaning": "straight ahead",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "er": {
+      "word": "er",
+      "lemma": "er",
+      "meaning": "there",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "bord": {
+      "word": "bord",
+      "lemma": "bord",
+      "meaning": "sign",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "rechtsaf": {
+      "word": "rechtsaf",
+      "lemma": "rechtsaf",
+      "meaning": "to the right",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vrij": {
+      "word": "vrij",
+      "lemma": "vrij",
+      "meaning": "allowed",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "rechts": {
+      "word": "rechts",
+      "lemma": "rechts",
+      "meaning": "right",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "af": {
+      "word": "af",
+      "lemma": "af",
+      "meaning": "off",
+      "partOfSpeech": "particle",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "maar": {
+      "word": "maar",
+      "lemma": "maar",
+      "meaning": "but",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "laat": {
+      "word": "laat",
+      "lemma": "laten",
+      "meaning": "let",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ander": {
+      "word": "ander",
+      "lemma": "ander",
+      "meaning": "other",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "verkeer": {
+      "word": "verkeer",
+      "lemma": "verkeer",
+      "meaning": "traffic",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eerst": {
+      "word": "eerst",
+      "lemma": "eerst",
+      "meaning": "first",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zo": {
+      "word": "zo",
+      "lemma": "zo",
+      "meaning": "so",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "auto’s": {
+      "word": "auto’s",
+      "lemma": "auto",
+      "meaning": "cars",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "en": {
+      "word": "en",
+      "lemma": "en",
+      "meaning": "and",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "voetgangers": {
+      "word": "voetgangers",
+      "lemma": "voetganger",
+      "meaning": "pedestrians",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "veilig": {
+      "word": "veilig",
+      "lemma": "veilig",
+      "meaning": "safely",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "oversteken": {
+      "word": "oversteken",
+      "lemma": "oversteken",
+      "meaning": "cross",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    }
+  },
+  "state": {
+    "read": false,
+    "favourite": false,
+    "notes": ""
+  },
+  "generation": {
+    "storyModel": "gpt-5.6-terra",
+    "storyReasoning": "high",
+    "annotationModel": "gpt-5.6-luna",
+    "annotationReasoning": "low"
+  },
+  "createdAt": "2026-09-01T20:40:17.392Z",
+  "updatedAt": "2026-09-01T20:40:45.975Z"
+}

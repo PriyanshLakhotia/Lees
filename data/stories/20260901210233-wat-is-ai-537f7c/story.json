@@ -1,0 +1,1966 @@
+{
+  "schemaVersion": 1,
+  "id": "20260901210233-wat-is-ai-537f7c",
+  "request": {
+    "type": "topic",
+    "topic": "technology",
+    "genre": "slice-of-life",
+    "idea": "AI",
+    "level": "A1",
+    "length": "medium"
+  },
+  "title": "Wat is AI?",
+  "subtitle": "Een computer leert van voorbeelden",
+  "summaryEnglish": "A simple Dutch text explaining artificial intelligence, training data, and why its answers need checking.",
+  "paragraphs": [
+    "AI betekent artificiële intelligentie. Het is technologie in een computer. AI kan een taak doen. De taak lijkt soms op menselijk denken. Een AI-systeem kan bijvoorbeeld een foto bekijken. Het kan ook woorden lezen. Daarna geeft het systeem een antwoord, een keuze of een nieuw stuk tekst.",
+    "Je ziet AI op veel plaatsen. Een telefoon kan je stem horen. Dan schrijft de telefoon je woorden op. Een winkel kan producten tonen die bij je passen. Een e-mailprogramma kan ongewenste post apart zetten. Ook een kaart op je telefoon kan een snelle weg kiezen. Dit zijn verschillende taken, maar ze gebruiken vaak hetzelfde idee: zoeken naar patronen.",
+    "Een patroon is iets dat vaak op elkaar lijkt. Denk aan foto’s van katten en honden. Mensen geven eerst veel foto’s aan een computer. Bij elke foto staat een naam. Op de ene foto staat: kat. Op de andere foto staat: hond. De computer kijkt naar heel veel voorbeelden. Hij zoekt kleine verschillen en overeenkomsten.",
+    "Na deze oefening krijgt de computer een nieuwe foto. Deze foto heeft geen naam. De AI vergelijkt de foto met de voorbeelden. Misschien ziet hij punten, oren en snorharen. Dan zegt hij: dit is waarschijnlijk een kat. Het woord ‘waarschijnlijk’ is belangrijk. De AI kan ook een fout maken.",
+    "Dit leren van voorbeelden heet vaak machine learning. De computer leert niet zoals een kind. Hij heeft geen ogen, gevoel of eigen plan. Hij gebruikt gegevens en regels. Gegevens zijn bijvoorbeeld foto’s, woorden, geluiden of cijfers. De makers kiezen eerst de taak. Zij geven daarna de voorbeelden aan het systeem.",
+    "Goede voorbeelden zijn erg belangrijk. Stel dat een AI alleen foto’s van witte katten ziet. Dan kent hij andere katten misschien niet goed. Ook kunnen foto’s te donker zijn. Of een naam bij een foto is fout. Dan leert het systeem iets verkeerds. Daarom kijken mensen naar de gegevens voordat zij een AI gebruiken.",
+    "Sommige AI kan nieuwe dingen maken. Je typt bijvoorbeeld: ‘Schrijf een kort bericht voor mijn vriend.’ De AI maakt dan een tekst. Of je vraagt om een plaatje van een rode fiets. Deze AI heeft veel voorbeelden van taal of beelden gezien. Hij kiest stap voor stap wat goed bij je vraag past.",
+    "Zo’n antwoord klinkt soms goed, maar het is niet altijd waar. AI begrijpt een onderwerp niet zoals een mens. Het systeem kan een verkeerde naam, datum of plaats geven. Het kan ook belangrijke informatie missen. Controleer daarom een antwoord, vooral bij school, geld, gezondheid of nieuws.",
+    "AI helpt dus bij duidelijke taken. Hij kan snel zoeken, sorteren, voorspellen of iets maken. Maar een mens blijft nodig. Mensen kiezen het doel. Mensen controleren het resultaat. En mensen beslissen wat eerlijk, veilig en goed is. AI is een hulpmiddel in een computer, geen persoon."
+  ],
+  "tags": ["technologie", "AI", "Nederlands A1"],
+  "sources": [
+    {
+      "title": "Artificial intelligence - Glossary",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://csrc.nist.gov/glossary/term/artificial_intelligence",
+      "publishedAt": "",
+      "retrievedAt": "2026-09-01T21:02:33.930Z"
+    },
+    {
+      "title": "What Is Artificial Intelligence (AI)?",
+      "publisher": "IBM Think",
+      "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+      "publishedAt": "",
+      "retrievedAt": "2026-09-01T21:02:33.930Z"
+    },
+    {
+      "title": "What is Machine Learning?",
+      "publisher": "IBM Think",
+      "url": "https://www.ibm.com/think/topics/machine-learning",
+      "publishedAt": "",
+      "retrievedAt": "2026-09-01T21:02:33.930Z"
+    }
+  ],
+  "wordCount": 459,
+  "readingMinutes": 6,
+  "annotations": {
+    "ai": {
+      "word": "ai",
+      "lemma": "AI",
+      "meaning": "artificial intelligence",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "betekent": {
+      "word": "betekent",
+      "lemma": "betekenen",
+      "meaning": "means",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "artificiële": {
+      "word": "artificiële",
+      "lemma": "artificieel",
+      "meaning": "artificial",
+      "partOfSpeech": "adjective",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "intelligentie": {
+      "word": "intelligentie",
+      "lemma": "intelligentie",
+      "meaning": "intelligence",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "het": {
+      "word": "het",
+      "lemma": "het",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "is": {
+      "word": "is",
+      "lemma": "zijn",
+      "meaning": "is",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "technologie": {
+      "word": "technologie",
+      "lemma": "technologie",
+      "meaning": "technology",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "in": {
+      "word": "in",
+      "lemma": "in",
+      "meaning": "in",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "een": {
+      "word": "een",
+      "lemma": "een",
+      "meaning": "a",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "computer": {
+      "word": "computer",
+      "lemma": "computer",
+      "meaning": "computer",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kan": {
+      "word": "kan",
+      "lemma": "kunnen",
+      "meaning": "can",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "taak": {
+      "word": "taak",
+      "lemma": "taak",
+      "meaning": "task",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "doen": {
+      "word": "doen",
+      "lemma": "doen",
+      "meaning": "do",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "de": {
+      "word": "de",
+      "lemma": "de",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "lijkt": {
+      "word": "lijkt",
+      "lemma": "lijken",
+      "meaning": "seems",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "soms": {
+      "word": "soms",
+      "lemma": "soms",
+      "meaning": "sometimes",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "op": {
+      "word": "op",
+      "lemma": "op",
+      "meaning": "like",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "menselijk": {
+      "word": "menselijk",
+      "lemma": "menselijk",
+      "meaning": "human",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "denken": {
+      "word": "denken",
+      "lemma": "denken",
+      "meaning": "thinking",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ai-systeem": {
+      "word": "ai-systeem",
+      "lemma": "AI-systeem",
+      "meaning": "AI system",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "bijvoorbeeld": {
+      "word": "bijvoorbeeld",
+      "lemma": "bijvoorbeeld",
+      "meaning": "for example",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "foto": {
+      "word": "foto",
+      "lemma": "foto",
+      "meaning": "photo",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "bekijken": {
+      "word": "bekijken",
+      "lemma": "bekijken",
+      "meaning": "look at",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ook": {
+      "word": "ook",
+      "lemma": "ook",
+      "meaning": "also",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "woorden": {
+      "word": "woorden",
+      "lemma": "woord",
+      "meaning": "words",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "lezen": {
+      "word": "lezen",
+      "lemma": "lezen",
+      "meaning": "read",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "daarna": {
+      "word": "daarna",
+      "lemma": "daarna",
+      "meaning": "after that",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geeft": {
+      "word": "geeft",
+      "lemma": "geven",
+      "meaning": "gives",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "systeem": {
+      "word": "systeem",
+      "lemma": "systeem",
+      "meaning": "system",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "antwoord": {
+      "word": "antwoord",
+      "lemma": "antwoord",
+      "meaning": "answer",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "keuze": {
+      "word": "keuze",
+      "lemma": "keuze",
+      "meaning": "choice",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "of": {
+      "word": "of",
+      "lemma": "of",
+      "meaning": "or",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nieuw": {
+      "word": "nieuw",
+      "lemma": "nieuw",
+      "meaning": "new",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stuk": {
+      "word": "stuk",
+      "lemma": "stuk",
+      "meaning": "piece",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "tekst": {
+      "word": "tekst",
+      "lemma": "tekst",
+      "meaning": "text",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "je": {
+      "word": "je",
+      "lemma": "je",
+      "meaning": "you",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ziet": {
+      "word": "ziet",
+      "lemma": "zien",
+      "meaning": "see",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "veel": {
+      "word": "veel",
+      "lemma": "veel",
+      "meaning": "many",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plaatsen": {
+      "word": "plaatsen",
+      "lemma": "plaats",
+      "meaning": "places",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "telefoon": {
+      "word": "telefoon",
+      "lemma": "telefoon",
+      "meaning": "phone",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stem": {
+      "word": "stem",
+      "lemma": "stem",
+      "meaning": "voice",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "horen": {
+      "word": "horen",
+      "lemma": "horen",
+      "meaning": "hear",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dan": {
+      "word": "dan",
+      "lemma": "dan",
+      "meaning": "then",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "schrijft": {
+      "word": "schrijft",
+      "lemma": "schrijven",
+      "meaning": "writes",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "winkel": {
+      "word": "winkel",
+      "lemma": "winkel",
+      "meaning": "shop",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "producten": {
+      "word": "producten",
+      "lemma": "product",
+      "meaning": "products",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "tonen": {
+      "word": "tonen",
+      "lemma": "tonen",
+      "meaning": "show",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "die": {
+      "word": "die",
+      "lemma": "die",
+      "meaning": "that",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "bij": {
+      "word": "bij",
+      "lemma": "bij",
+      "meaning": "with",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "passen": {
+      "word": "passen",
+      "lemma": "passen",
+      "meaning": "suit",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "e-mailprogramma": {
+      "word": "e-mailprogramma",
+      "lemma": "e-mailprogramma",
+      "meaning": "email program",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "Mijn e-mailprogramma werkt goed.",
+      "exampleEn": "My email program works well."
+    },
+    "ongewenste": {
+      "word": "ongewenste",
+      "lemma": "ongewenst",
+      "meaning": "unwanted",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "post": {
+      "word": "post",
+      "lemma": "post",
+      "meaning": "mail",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "apart": {
+      "word": "apart",
+      "lemma": "apart",
+      "meaning": "separately",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zetten": {
+      "word": "zetten",
+      "lemma": "zetten",
+      "meaning": "put",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kaart": {
+      "word": "kaart",
+      "lemma": "kaart",
+      "meaning": "map",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "snelle": {
+      "word": "snelle",
+      "lemma": "snel",
+      "meaning": "quick",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "weg": {
+      "word": "weg",
+      "lemma": "weg",
+      "meaning": "route",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kiezen": {
+      "word": "kiezen",
+      "lemma": "kiezen",
+      "meaning": "choose",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dit": {
+      "word": "dit",
+      "lemma": "dit",
+      "meaning": "this",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zijn": {
+      "word": "zijn",
+      "lemma": "zijn",
+      "meaning": "are",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "verschillende": {
+      "word": "verschillende",
+      "lemma": "verschillend",
+      "meaning": "different",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "taken": {
+      "word": "taken",
+      "lemma": "taak",
+      "meaning": "tasks",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "maar": {
+      "word": "maar",
+      "lemma": "maar",
+      "meaning": "but",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ze": {
+      "word": "ze",
+      "lemma": "ze",
+      "meaning": "they",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gebruiken": {
+      "word": "gebruiken",
+      "lemma": "gebruiken",
+      "meaning": "use",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vaak": {
+      "word": "vaak",
+      "lemma": "vaak",
+      "meaning": "often",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hetzelfde": {
+      "word": "hetzelfde",
+      "lemma": "hetzelfde",
+      "meaning": "the same",
+      "partOfSpeech": "pronoun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "idee": {
+      "word": "idee",
+      "lemma": "idee",
+      "meaning": "idea",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zoeken": {
+      "word": "zoeken",
+      "lemma": "zoeken",
+      "meaning": "search",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "naar": {
+      "word": "naar",
+      "lemma": "naar",
+      "meaning": "for",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "patronen": {
+      "word": "patronen",
+      "lemma": "patroon",
+      "meaning": "patterns",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "patroon": {
+      "word": "patroon",
+      "lemma": "patroon",
+      "meaning": "pattern",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "Ik herken een patroon.",
+      "exampleEn": "I recognize a pattern."
+    },
+    "iets": {
+      "word": "iets",
+      "lemma": "iets",
+      "meaning": "something",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dat": {
+      "word": "dat",
+      "lemma": "dat",
+      "meaning": "that",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "elkaar": {
+      "word": "elkaar",
+      "lemma": "elkaar",
+      "meaning": "each other",
+      "partOfSpeech": "pronoun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "denk": {
+      "word": "denk",
+      "lemma": "denken",
+      "meaning": "think",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "aan": {
+      "word": "aan",
+      "lemma": "aan",
+      "meaning": "about",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "foto’s": {
+      "word": "foto’s",
+      "lemma": "foto",
+      "meaning": "photos",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "van": {
+      "word": "van",
+      "lemma": "van",
+      "meaning": "of",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "katten": {
+      "word": "katten",
+      "lemma": "kat",
+      "meaning": "cats",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "en": {
+      "word": "en",
+      "lemma": "en",
+      "meaning": "and",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "honden": {
+      "word": "honden",
+      "lemma": "hond",
+      "meaning": "dogs",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "mensen": {
+      "word": "mensen",
+      "lemma": "mens",
+      "meaning": "people",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geven": {
+      "word": "geven",
+      "lemma": "geven",
+      "meaning": "give",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eerst": {
+      "word": "eerst",
+      "lemma": "eerst",
+      "meaning": "first",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "elke": {
+      "word": "elke",
+      "lemma": "elk",
+      "meaning": "each",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "staat": {
+      "word": "staat",
+      "lemma": "staan",
+      "meaning": "stands",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "naam": {
+      "word": "naam",
+      "lemma": "naam",
+      "meaning": "name",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ene": {
+      "word": "ene",
+      "lemma": "een",
+      "meaning": "one",
+      "partOfSpeech": "pronoun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kat": {
+      "word": "kat",
+      "lemma": "kat",
+      "meaning": "cat",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "andere": {
+      "word": "andere",
+      "lemma": "ander",
+      "meaning": "other",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hond": {
+      "word": "hond",
+      "lemma": "hond",
+      "meaning": "dog",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kijkt": {
+      "word": "kijkt",
+      "lemma": "kijken",
+      "meaning": "looks",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heel": {
+      "word": "heel",
+      "lemma": "heel",
+      "meaning": "very",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "voorbeelden": {
+      "word": "voorbeelden",
+      "lemma": "voorbeeld",
+      "meaning": "examples",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hij": {
+      "word": "hij",
+      "lemma": "hij",
+      "meaning": "he",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zoekt": {
+      "word": "zoekt",
+      "lemma": "zoeken",
+      "meaning": "searches",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kleine": {
+      "word": "kleine",
+      "lemma": "klein",
+      "meaning": "small",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "verschillen": {
+      "word": "verschillen",
+      "lemma": "verschil",
+      "meaning": "differences",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "overeenkomsten": {
+      "word": "overeenkomsten",
+      "lemma": "overeenkomst",
+      "meaning": "similarities",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "na": {
+      "word": "na",
+      "lemma": "na",
+      "meaning": "after",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "deze": {
+      "word": "deze",
+      "lemma": "deze",
+      "meaning": "this",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "oefening": {
+      "word": "oefening",
+      "lemma": "oefening",
+      "meaning": "exercise",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "krijgt": {
+      "word": "krijgt",
+      "lemma": "krijgen",
+      "meaning": "gets",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nieuwe": {
+      "word": "nieuwe",
+      "lemma": "nieuw",
+      "meaning": "new",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heeft": {
+      "word": "heeft",
+      "lemma": "hebben",
+      "meaning": "has",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geen": {
+      "word": "geen",
+      "lemma": "geen",
+      "meaning": "no",
+      "partOfSpeech": "determiner",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vergelijkt": {
+      "word": "vergelijkt",
+      "lemma": "vergelijken",
+      "meaning": "compares",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "Zij vergelijkt twee foto’s.",
+      "exampleEn": "She compares two photos."
+    },
+    "met": {
+      "word": "met",
+      "lemma": "met",
+      "meaning": "with",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "misschien": {
+      "word": "misschien",
+      "lemma": "misschien",
+      "meaning": "perhaps",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "punten": {
+      "word": "punten",
+      "lemma": "punt",
+      "meaning": "points",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "oren": {
+      "word": "oren",
+      "lemma": "oor",
+      "meaning": "ears",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "snorharen": {
+      "word": "snorharen",
+      "lemma": "snorhaar",
+      "meaning": "whiskers",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zegt": {
+      "word": "zegt",
+      "lemma": "zeggen",
+      "meaning": "says",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "waarschijnlijk": {
+      "word": "waarschijnlijk",
+      "lemma": "waarschijnlijk",
+      "meaning": "probably",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "Waarschijnlijk komt hij morgen.",
+      "exampleEn": "He will probably come tomorrow."
+    },
+    "woord": {
+      "word": "woord",
+      "lemma": "woord",
+      "meaning": "word",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "belangrijk": {
+      "word": "belangrijk",
+      "lemma": "belangrijk",
+      "meaning": "important",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "fout": {
+      "word": "fout",
+      "lemma": "fout",
+      "meaning": "mistake",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "maken": {
+      "word": "maken",
+      "lemma": "maken",
+      "meaning": "make",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "leren": {
+      "word": "leren",
+      "lemma": "leren",
+      "meaning": "learn",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heet": {
+      "word": "heet",
+      "lemma": "heten",
+      "meaning": "is called",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "machine": {
+      "word": "machine",
+      "lemma": "machine",
+      "meaning": "machine",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "learning": {
+      "word": "learning",
+      "lemma": "learning",
+      "meaning": "learning",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "leert": {
+      "word": "leert",
+      "lemma": "leren",
+      "meaning": "learns",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "niet": {
+      "word": "niet",
+      "lemma": "niet",
+      "meaning": "not",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zoals": {
+      "word": "zoals",
+      "lemma": "zoals",
+      "meaning": "like",
+      "partOfSpeech": "conjunction",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kind": {
+      "word": "kind",
+      "lemma": "kind",
+      "meaning": "child",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ogen": {
+      "word": "ogen",
+      "lemma": "oog",
+      "meaning": "eyes",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gevoel": {
+      "word": "gevoel",
+      "lemma": "gevoel",
+      "meaning": "feeling",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eigen": {
+      "word": "eigen",
+      "lemma": "eigen",
+      "meaning": "own",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plan": {
+      "word": "plan",
+      "lemma": "plan",
+      "meaning": "plan",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gebruikt": {
+      "word": "gebruikt",
+      "lemma": "gebruiken",
+      "meaning": "uses",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gegevens": {
+      "word": "gegevens",
+      "lemma": "gegeven",
+      "meaning": "data",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "Bescherm je persoonlijke gegevens.",
+      "exampleEn": "Protect your personal data."
+    },
+    "regels": {
+      "word": "regels",
+      "lemma": "regel",
+      "meaning": "rules",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geluiden": {
+      "word": "geluiden",
+      "lemma": "geluid",
+      "meaning": "sounds",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "cijfers": {
+      "word": "cijfers",
+      "lemma": "cijfer",
+      "meaning": "numbers",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "makers": {
+      "word": "makers",
+      "lemma": "maker",
+      "meaning": "creators",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zij": {
+      "word": "zij",
+      "lemma": "zij",
+      "meaning": "they",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "goede": {
+      "word": "goede",
+      "lemma": "goed",
+      "meaning": "good",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "erg": {
+      "word": "erg",
+      "lemma": "erg",
+      "meaning": "very",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stel": {
+      "word": "stel",
+      "lemma": "stellen",
+      "meaning": "suppose",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "alleen": {
+      "word": "alleen",
+      "lemma": "alleen",
+      "meaning": "only",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "witte": {
+      "word": "witte",
+      "lemma": "wit",
+      "meaning": "white",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kent": {
+      "word": "kent",
+      "lemma": "kennen",
+      "meaning": "knows",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "goed": {
+      "word": "goed",
+      "lemma": "goed",
+      "meaning": "well",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kunnen": {
+      "word": "kunnen",
+      "lemma": "kunnen",
+      "meaning": "can",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "te": {
+      "word": "te",
+      "lemma": "te",
+      "meaning": "too",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "donker": {
+      "word": "donker",
+      "lemma": "donker",
+      "meaning": "dark",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "verkeerds": {
+      "word": "verkeerds",
+      "lemma": "verkeerd",
+      "meaning": "wrong",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "daarom": {
+      "word": "daarom",
+      "lemma": "daarom",
+      "meaning": "therefore",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kijken": {
+      "word": "kijken",
+      "lemma": "kijken",
+      "meaning": "look",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "voordat": {
+      "word": "voordat",
+      "lemma": "voordat",
+      "meaning": "before",
+      "partOfSpeech": "conjunction",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "sommige": {
+      "word": "sommige",
+      "lemma": "sommig",
+      "meaning": "some",
+      "partOfSpeech": "determiner",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dingen": {
+      "word": "dingen",
+      "lemma": "ding",
+      "meaning": "things",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "typt": {
+      "word": "typt",
+      "lemma": "typen",
+      "meaning": "types",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "schrijf": {
+      "word": "schrijf",
+      "lemma": "schrijven",
+      "meaning": "write",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kort": {
+      "word": "kort",
+      "lemma": "kort",
+      "meaning": "short",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "bericht": {
+      "word": "bericht",
+      "lemma": "bericht",
+      "meaning": "message",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "Ik stuur een kort bericht.",
+      "exampleEn": "I send a short message."
+    },
+    "voor": {
+      "word": "voor",
+      "lemma": "voor",
+      "meaning": "for",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "mijn": {
+      "word": "mijn",
+      "lemma": "mijn",
+      "meaning": "my",
+      "partOfSpeech": "determiner",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vriend": {
+      "word": "vriend",
+      "lemma": "vriend",
+      "meaning": "friend",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "maakt": {
+      "word": "maakt",
+      "lemma": "maken",
+      "meaning": "makes",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vraagt": {
+      "word": "vraagt",
+      "lemma": "vragen",
+      "meaning": "asks",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "om": {
+      "word": "om",
+      "lemma": "om",
+      "meaning": "for",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plaatje": {
+      "word": "plaatje",
+      "lemma": "plaatje",
+      "meaning": "picture",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "rode": {
+      "word": "rode",
+      "lemma": "rood",
+      "meaning": "red",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "fiets": {
+      "word": "fiets",
+      "lemma": "fiets",
+      "meaning": "bicycle",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "taal": {
+      "word": "taal",
+      "lemma": "taal",
+      "meaning": "language",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "beelden": {
+      "word": "beelden",
+      "lemma": "beeld",
+      "meaning": "images",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gezien": {
+      "word": "gezien",
+      "lemma": "zien",
+      "meaning": "seen",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kiest": {
+      "word": "kiest",
+      "lemma": "kiezen",
+      "meaning": "chooses",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stap": {
+      "word": "stap",
+      "lemma": "stap",
+      "meaning": "step",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "wat": {
+      "word": "wat",
+      "lemma": "wat",
+      "meaning": "what",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vraag": {
+      "word": "vraag",
+      "lemma": "vraag",
+      "meaning": "question",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "past": {
+      "word": "past",
+      "lemma": "passen",
+      "meaning": "fits",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zo’n": {
+      "word": "zo’n",
+      "lemma": "zo'n",
+      "meaning": "such a",
+      "partOfSpeech": "determiner",
+      "difficulty": "useful",
+      "exampleNl": "Zo’n fiets is duur.",
+      "exampleEn": "Such a bicycle is expensive."
+    },
+    "klinkt": {
+      "word": "klinkt",
+      "lemma": "klinken",
+      "meaning": "sounds",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "altijd": {
+      "word": "altijd",
+      "lemma": "altijd",
+      "meaning": "always",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "waar": {
+      "word": "waar",
+      "lemma": "waar",
+      "meaning": "true",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "begrijpt": {
+      "word": "begrijpt",
+      "lemma": "begrijpen",
+      "meaning": "understands",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "Zij begrijpt de vraag.",
+      "exampleEn": "She understands the question."
+    },
+    "onderwerp": {
+      "word": "onderwerp",
+      "lemma": "onderwerp",
+      "meaning": "subject",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "mens": {
+      "word": "mens",
+      "lemma": "mens",
+      "meaning": "human",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "verkeerde": {
+      "word": "verkeerde",
+      "lemma": "verkeerd",
+      "meaning": "wrong",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "datum": {
+      "word": "datum",
+      "lemma": "datum",
+      "meaning": "date",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plaats": {
+      "word": "plaats",
+      "lemma": "plaats",
+      "meaning": "place",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "belangrijke": {
+      "word": "belangrijke",
+      "lemma": "belangrijk",
+      "meaning": "important",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "informatie": {
+      "word": "informatie",
+      "lemma": "informatie",
+      "meaning": "information",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "missen": {
+      "word": "missen",
+      "lemma": "missen",
+      "meaning": "miss",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "controleer": {
+      "word": "controleer",
+      "lemma": "controleren",
+      "meaning": "check",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vooral": {
+      "word": "vooral",
+      "lemma": "vooral",
+      "meaning": "especially",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "school": {
+      "word": "school",
+      "lemma": "school",
+      "meaning": "school",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geld": {
+      "word": "geld",
+      "lemma": "geld",
+      "meaning": "money",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gezondheid": {
+      "word": "gezondheid",
+      "lemma": "gezondheid",
+      "meaning": "health",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nieuws": {
+      "word": "nieuws",
+      "lemma": "nieuws",
+      "meaning": "news",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "helpt": {
+      "word": "helpt",
+      "lemma": "helpen",
+      "meaning": "helps",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dus": {
+      "word": "dus",
+      "lemma": "dus",
+      "meaning": "therefore",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "duidelijke": {
+      "word": "duidelijke",
+      "lemma": "duidelijk",
+      "meaning": "clear",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "snel": {
+      "word": "snel",
+      "lemma": "snel",
+      "meaning": "quickly",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "sorteren": {
+      "word": "sorteren",
+      "lemma": "sorteren",
+      "meaning": "sort",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "voorspellen": {
+      "word": "voorspellen",
+      "lemma": "voorspellen",
+      "meaning": "predict",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "blijft": {
+      "word": "blijft",
+      "lemma": "blijven",
+      "meaning": "remains",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nodig": {
+      "word": "nodig",
+      "lemma": "nodig",
+      "meaning": "necessary",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "doel": {
+      "word": "doel",
+      "lemma": "doel",
+      "meaning": "goal",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "controleren": {
+      "word": "controleren",
+      "lemma": "controleren",
+      "meaning": "check",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "resultaat": {
+      "word": "resultaat",
+      "lemma": "resultaat",
+      "meaning": "result",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "beslissen": {
+      "word": "beslissen",
+      "lemma": "beslissen",
+      "meaning": "decide",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eerlijk": {
+      "word": "eerlijk",
+      "lemma": "eerlijk",
+      "meaning": "fair",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "veilig": {
+      "word": "veilig",
+      "lemma": "veilig",
+      "meaning": "safe",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hulpmiddel": {
+      "word": "hulpmiddel",
+      "lemma": "hulpmiddel",
+      "meaning": "tool",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "Een computer is een handig hulpmiddel.",
+      "exampleEn": "A computer is a useful tool."
+    },
+    "persoon": {
+      "word": "persoon",
+      "lemma": "persoon",
+      "meaning": "person",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    }
+  },
+  "state": {
+    "read": false,
+    "favourite": false,
+    "notes": ""
+  },
+  "generation": {
+    "storyModel": "gpt-5.6-terra",
+    "storyReasoning": "high",
+    "annotationModel": "gpt-5.6-luna",
+    "annotationReasoning": "low"
+  },
+  "createdAt": "2026-09-01T21:04:23.637Z",
+  "updatedAt": "2026-09-01T21:04:23.637Z"
+}

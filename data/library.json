@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "stories": [
+    {
+      "id": "20260901210233-wat-is-ai-537f7c",
+      "title": "Wat is AI?",
+      "subtitle": "Een computer leert van voorbeelden",
+      "summaryEnglish": "A simple Dutch text explaining artificial intelligence, training data, and why its answers need checking.",
+      "type": "topic",
+      "topic": "technology",
+      "genre": "slice-of-life",
+      "level": "A1",
+      "length": "medium",
+      "readingMinutes": 6,
+      "wordCount": 459,
+      "createdAt": "2026-09-01T21:04:23.637Z",
+      "read": false,
+      "favourite": false,
+      "hasNotes": false
+    },
+    {
+      "id": "20260901203917-fietslichten-in-nederland-b5857e",
+      "title": "Fietslichten in Nederland",
+      "subtitle": "Rood, groen en veilig oversteken",
+      "summaryEnglish": "A simple explanation of how bicycle traffic lights guide cyclists at Dutch crossings.",
+      "type": "topic",
+      "topic": "netherlands",
+      "genre": "slice-of-life",
+      "level": "A1",
+      "length": "short",
+      "readingMinutes": 2,
+      "wordCount": 159,
+      "createdAt": "2026-09-01T20:40:17.392Z",
+      "read": false,
+      "favourite": false,
+      "hasNotes": false
+    }
+  ]
+}
