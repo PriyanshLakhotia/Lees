@@ -728,14 +728,6 @@ export function ReaderApp() {
                 >
                   <Check /> {story.state.read ? 'Read' : 'Mark as read'}
                 </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="sm:ml-auto"
-                  onClick={() => setChatOpen(true)}
-                >
-                  <MessageCircle /> Ask about this text
-                </Button>
               </div>
 
               <section className="mt-8 rounded-xl border border-border bg-card/70 p-5">
@@ -802,15 +794,17 @@ export function ReaderApp() {
             </div>
           )}
 
-          {selection && story ? (
+          {story ? (
             <Button
-              className="fixed bottom-5 left-1/2 z-20 max-w-[calc(100%-2rem)] -translate-x-1/2 shadow-lg"
-              size="sm"
+              className="fixed right-5 bottom-5 z-40 h-12 max-w-[calc(100%-2.5rem)] rounded-full px-5 shadow-[0_10px_32px_rgba(29,43,37,0.2)] sm:right-7 sm:bottom-7"
               onClick={() => setChatOpen(true)}
+              aria-haspopup="dialog"
+              aria-expanded={chatOpen}
             >
-              <MessageCircle /> Ask about “
-              {selection.length > 34 ? `${selection.slice(0, 34)}…` : selection}
-              ”
+              <MessageCircle />
+              <span className="truncate">
+                {selection ? 'Ask about selection' : 'Ask AI'}
+              </span>
             </Button>
           ) : null}
         </div>
