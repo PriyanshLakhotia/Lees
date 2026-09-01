@@ -39,6 +39,13 @@ export type Annotation = {
   exampleEn: string;
 };
 
+export type SentenceTranslation = {
+  paragraphIndex: number;
+  sentenceIndex: number;
+  dutch: string;
+  english: string;
+};
+
 export type Story = {
   schemaVersion: number;
   id: string;
@@ -58,6 +65,7 @@ export type Story = {
   wordCount: number;
   readingMinutes: number;
   annotations: Record<string, Annotation>;
+  sentenceTranslations: SentenceTranslation[];
   state: { read: boolean; favourite: boolean; notes: string };
   createdAt: string;
   updatedAt: string;

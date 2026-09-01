@@ -5,6 +5,7 @@ import { MAX_PARALLEL_GENERATIONS, SCHEMAS_DIRECTORY } from './config.mjs';
 import { runCodex } from './codex.mjs';
 import { buildAnnotationPrompt, buildStoryPrompt } from './prompts.mjs';
 import { saveStory } from './storage.mjs';
+import { translateSentences } from './translations.mjs';
 import {
   chunk,
   countWords,
@@ -148,7 +149,7 @@ async function runGeneration(job) {
 
     const storyId = createStoryId(draft.title);
     const baseStory = {
-      schemaVersion: 1,
+      schemaVersion: 2,
       id: storyId,
       request: job.request,
       title: draft.title.trim(),
@@ -167,17 +168,16 @@ async function runGeneration(job) {
 
     updateJob(job, {
       stage: 'annotating',
-      detail: `Adding word meanings · 0/${Math.ceil(words.length / 180)}`,
+      detail: `Adding reading aids · words 0/${Math.ceil(words.length / 180)}`,
     });
-    const annotations = await annotateWords(
-      baseStory,
-      words,
-      (complete, total) => {
+    const [annotations, sentenceTranslations] = await Promise.all([
+      annotateWords(baseStory, words, (complete, total) => {
         updateJob(job, {
-          detail: `Adding word meanings · ${complete}/${total}`,
+          detail: `Adding reading aids · words ${complete}/${total}`,
         });
-      },
-    );
+      }),
+      translateSentences(baseStory),
+    ]);
     const wordCount = countWords(baseStory.paragraphs);
     const createdAt = new Date().toISOString();
     const story = {
@@ -185,12 +185,15 @@ async function runGeneration(job) {
       wordCount,
       readingMinutes: estimateReadingMinutes(wordCount, job.request.level),
       annotations,
+      sentenceTranslations,
       state: { read: false, favourite: false, notes: '' },
       generation: {
         storyModel: 'gpt-5.6-terra',
         storyReasoning: 'high',
         annotationModel: 'gpt-5.6-luna',
         annotationReasoning: 'low',
+        translationModel: 'gpt-5.6-luna',
+        translationReasoning: 'low',
       },
       createdAt,
       updatedAt: createdAt,

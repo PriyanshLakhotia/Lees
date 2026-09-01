@@ -69,6 +69,11 @@ function storyMarkdown(story) {
     .filter((entry) => entry.difficulty !== 'common')
     .slice(0, 40)
     .map((entry) => `- **${entry.word}** (${entry.lemma}) — ${entry.meaning}`);
+  const sentenceTranslations = Array.isArray(story.sentenceTranslations)
+    ? story.sentenceTranslations.map(
+        (entry) => `- ${entry.dutch}\n  - ${entry.english}`,
+      )
+    : [];
 
   return `---
 id: ${quoteYaml(story.id)}
@@ -87,6 +92,10 @@ favourite: ${story.state.favourite}
 _${story.subtitle}_
 
 ${story.paragraphs.join('\n\n')}
+
+## Sentence translations
+
+${sentenceTranslations.length ? sentenceTranslations.join('\n') : '- Not available.'}
 
 ## Sources
 

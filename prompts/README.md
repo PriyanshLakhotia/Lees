@@ -8,4 +8,4 @@ Story requests are composed at runtime in this order:
 4. `story/lengths/<length>.md` — short, medium, or long target
 5. A generated request block — the selected topic, genre, idea, date, level, and length
 
-Word annotation and chat have independent additive base prompts. Keeping the modules separate makes level calibration and content behaviour editable without changing application code.
+Word annotation, sentence translation, and chat have independent additive base prompts. Keeping the modules separate makes level calibration and content behaviour editable without changing application code.

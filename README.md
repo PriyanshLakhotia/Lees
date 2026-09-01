@@ -26,7 +26,7 @@ npm start
 ## How generation works
 
 - Dutch texts and factual research: `gpt-5.6-terra`, high reasoning
-- Word meanings and reading chat: `gpt-5.6-luna`, low reasoning
+- Word meanings, sentence translations, and reading chat: `gpt-5.6-luna`, low reasoning
 - Current and factual content uses Codex web search and stores the source links.
 - Each generation is an independent background job. Up to three texts can generate concurrently.
 - Codex runs are ephemeral and read-only. No OpenAI API key is needed when the CLI is signed in with ChatGPT.
@@ -47,7 +47,7 @@ data/
       story.md
 ```
 
-`story.json` contains the complete article, metadata, sources, word annotations, read/favourite state, and notes. `story.md` is a readable copy. Clarification chats and active job state are session-only.
+`story.json` contains the complete article, metadata, sources, word annotations, sentence translations, read/favourite state, and notes. `story.md` is a readable copy. Clarification chats and active job state are session-only.
 
 ## Useful commands
 

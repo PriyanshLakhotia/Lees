@@ -1,4 +1,7 @@
 const WORD_PATTERN = /[\p{L}\p{M}]+(?:['’-][\p{L}\p{M}]+)*/gu;
+const SENTENCE_SEGMENTER = new Intl.Segmenter('nl-NL', {
+  granularity: 'sentence',
+});
 
 export function normalizeWord(value) {
   return value.normalize('NFC').toLocaleLowerCase('nl-NL');
@@ -10,6 +13,20 @@ export function extractWords(paragraphs) {
 
 export function extractUniqueWords(paragraphs) {
   return [...new Set(extractWords(paragraphs).map(normalizeWord))];
+}
+
+export function extractSentences(paragraphs) {
+  const sentences = [];
+  paragraphs.forEach((paragraph, paragraphIndex) => {
+    let sentenceIndex = 0;
+    for (const { segment } of SENTENCE_SEGMENTER.segment(paragraph)) {
+      const dutch = segment.trim();
+      if (!dutch) continue;
+      sentences.push({ paragraphIndex, sentenceIndex, dutch });
+      sentenceIndex += 1;
+    }
+  });
+  return sentences;
 }
 
 export function countWords(paragraphs) {

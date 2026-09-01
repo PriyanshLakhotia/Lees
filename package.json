@@ -12,6 +12,7 @@
     "build": "vinext build",
     "start": "node scripts/run-local.mjs start",
     "start:web": "wrangler dev --config dist/server/wrangler.json --port 3001",
+    "backfill:translations": "node scripts/backfill-translations.mjs",
     "test": "node --test server/*.test.mjs",
     "lint": "oxlint",
     "format": "oxfmt"

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "20260901210233-wat-is-ai-537f7c",
   "request": {
     "type": "topic",
@@ -1959,8 +1959,378 @@
     "storyModel": "gpt-5.6-terra",
     "storyReasoning": "high",
     "annotationModel": "gpt-5.6-luna",
-    "annotationReasoning": "low"
+    "annotationReasoning": "low",
+    "translationModel": "gpt-5.6-luna",
+    "translationReasoning": "low"
   },
   "createdAt": "2026-09-01T21:04:23.637Z",
-  "updatedAt": "2026-09-01T21:04:23.637Z"
+  "updatedAt": "2026-09-01T21:20:11.018Z",
+  "sentenceTranslations": [
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 0,
+      "dutch": "AI betekent artificiële intelligentie.",
+      "english": "AI means artificial intelligence."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 1,
+      "dutch": "Het is technologie in een computer.",
+      "english": "It is technology in a computer."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 2,
+      "dutch": "AI kan een taak doen.",
+      "english": "AI can do a task."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 3,
+      "dutch": "De taak lijkt soms op menselijk denken.",
+      "english": "The task sometimes resembles human thinking."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 4,
+      "dutch": "Een AI-systeem kan bijvoorbeeld een foto bekijken.",
+      "english": "For example, an AI system can look at a photo."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 5,
+      "dutch": "Het kan ook woorden lezen.",
+      "english": "It can also read words."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 6,
+      "dutch": "Daarna geeft het systeem een antwoord, een keuze of een nieuw stuk tekst.",
+      "english": "Then the system gives an answer, a choice, or a new piece of text."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 0,
+      "dutch": "Je ziet AI op veel plaatsen.",
+      "english": "You see AI in many places."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 1,
+      "dutch": "Een telefoon kan je stem horen.",
+      "english": "A phone can hear your voice."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 2,
+      "dutch": "Dan schrijft de telefoon je woorden op.",
+      "english": "Then the phone writes down your words."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 3,
+      "dutch": "Een winkel kan producten tonen die bij je passen.",
+      "english": "A shop can show products that suit you."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 4,
+      "dutch": "Een e-mailprogramma kan ongewenste post apart zetten.",
+      "english": "An email program can set unwanted mail aside."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 5,
+      "dutch": "Ook een kaart op je telefoon kan een snelle weg kiezen.",
+      "english": "A map on your phone can also choose a fast route."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 6,
+      "dutch": "Dit zijn verschillende taken, maar ze gebruiken vaak hetzelfde idee: zoeken naar patronen.",
+      "english": "These are different tasks, but they often use the same idea: looking for patterns."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 0,
+      "dutch": "Een patroon is iets dat vaak op elkaar lijkt.",
+      "english": "A pattern is something that often looks similar."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 1,
+      "dutch": "Denk aan foto’s van katten en honden.",
+      "english": "Think of photos of cats and dogs."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 2,
+      "dutch": "Mensen geven eerst veel foto’s aan een computer.",
+      "english": "First, people give a computer many photos."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 3,
+      "dutch": "Bij elke foto staat een naam.",
+      "english": "Each photo has a name."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 4,
+      "dutch": "Op de ene foto staat: kat.",
+      "english": "One photo is labeled: cat."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 5,
+      "dutch": "Op de andere foto staat: hond.",
+      "english": "The other photo is labeled: dog."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 6,
+      "dutch": "De computer kijkt naar heel veel voorbeelden.",
+      "english": "The computer looks at many examples."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 7,
+      "dutch": "Hij zoekt kleine verschillen en overeenkomsten.",
+      "english": "It looks for small differences and similarities."
+    },
+    {
+      "paragraphIndex": 3,
+      "sentenceIndex": 0,
+      "dutch": "Na deze oefening krijgt de computer een nieuwe foto.",
+      "english": "After this practice, the computer gets a new photo."
+    },
+    {
+      "paragraphIndex": 3,
+      "sentenceIndex": 1,
+      "dutch": "Deze foto heeft geen naam.",
+      "english": "This photo has no name."
+    },
+    {
+      "paragraphIndex": 3,
+      "sentenceIndex": 2,
+      "dutch": "De AI vergelijkt de foto met de voorbeelden.",
+      "english": "The AI compares the photo with the examples."
+    },
+    {
+      "paragraphIndex": 3,
+      "sentenceIndex": 3,
+      "dutch": "Misschien ziet hij punten, oren en snorharen.",
+      "english": "Maybe it sees spots, ears, and whiskers."
+    },
+    {
+      "paragraphIndex": 3,
+      "sentenceIndex": 4,
+      "dutch": "Dan zegt hij: dit is waarschijnlijk een kat.",
+      "english": "Then it says: this is probably a cat."
+    },
+    {
+      "paragraphIndex": 3,
+      "sentenceIndex": 5,
+      "dutch": "Het woord ‘waarschijnlijk’ is belangrijk.",
+      "english": "The word ‘probably’ is important."
+    },
+    {
+      "paragraphIndex": 3,
+      "sentenceIndex": 6,
+      "dutch": "De AI kan ook een fout maken.",
+      "english": "The AI can also make a mistake."
+    },
+    {
+      "paragraphIndex": 4,
+      "sentenceIndex": 0,
+      "dutch": "Dit leren van voorbeelden heet vaak machine learning.",
+      "english": "This learning from examples is often called machine learning."
+    },
+    {
+      "paragraphIndex": 4,
+      "sentenceIndex": 1,
+      "dutch": "De computer leert niet zoals een kind.",
+      "english": "The computer does not learn like a child."
+    },
+    {
+      "paragraphIndex": 4,
+      "sentenceIndex": 2,
+      "dutch": "Hij heeft geen ogen, gevoel of eigen plan.",
+      "english": "It has no eyes, feelings, or its own plan."
+    },
+    {
+      "paragraphIndex": 4,
+      "sentenceIndex": 3,
+      "dutch": "Hij gebruikt gegevens en regels.",
+      "english": "It uses data and rules."
+    },
+    {
+      "paragraphIndex": 4,
+      "sentenceIndex": 4,
+      "dutch": "Gegevens zijn bijvoorbeeld foto’s, woorden, geluiden of cijfers.",
+      "english": "Data can be photos, words, sounds, or numbers, for example."
+    },
+    {
+      "paragraphIndex": 4,
+      "sentenceIndex": 5,
+      "dutch": "De makers kiezen eerst de taak.",
+      "english": "The creators choose the task first."
+    },
+    {
+      "paragraphIndex": 4,
+      "sentenceIndex": 6,
+      "dutch": "Zij geven daarna de voorbeelden aan het systeem.",
+      "english": "Then they give the examples to the system."
+    },
+    {
+      "paragraphIndex": 5,
+      "sentenceIndex": 0,
+      "dutch": "Goede voorbeelden zijn erg belangrijk.",
+      "english": "Good examples are very important."
+    },
+    {
+      "paragraphIndex": 5,
+      "sentenceIndex": 1,
+      "dutch": "Stel dat een AI alleen foto’s van witte katten ziet.",
+      "english": "Suppose an AI only sees photos of white cats."
+    },
+    {
+      "paragraphIndex": 5,
+      "sentenceIndex": 2,
+      "dutch": "Dan kent hij andere katten misschien niet goed.",
+      "english": "Then it may not know other cats well."
+    },
+    {
+      "paragraphIndex": 5,
+      "sentenceIndex": 3,
+      "dutch": "Ook kunnen foto’s te donker zijn.",
+      "english": "Photos can also be too dark."
+    },
+    {
+      "paragraphIndex": 5,
+      "sentenceIndex": 4,
+      "dutch": "Of een naam bij een foto is fout.",
+      "english": "Or a photo may have the wrong name."
+    },
+    {
+      "paragraphIndex": 5,
+      "sentenceIndex": 5,
+      "dutch": "Dan leert het systeem iets verkeerds.",
+      "english": "Then the system learns something incorrectly."
+    },
+    {
+      "paragraphIndex": 5,
+      "sentenceIndex": 6,
+      "dutch": "Daarom kijken mensen naar de gegevens voordat zij een AI gebruiken.",
+      "english": "That is why people check the data before they use an AI."
+    },
+    {
+      "paragraphIndex": 6,
+      "sentenceIndex": 0,
+      "dutch": "Sommige AI kan nieuwe dingen maken.",
+      "english": "Some AI can create new things."
+    },
+    {
+      "paragraphIndex": 6,
+      "sentenceIndex": 1,
+      "dutch": "Je typt bijvoorbeeld: ‘Schrijf een kort bericht voor mijn vriend.’",
+      "english": "For example, you type: ‘Write a short message for my friend.’"
+    },
+    {
+      "paragraphIndex": 6,
+      "sentenceIndex": 2,
+      "dutch": "De AI maakt dan een tekst.",
+      "english": "The AI then creates a text."
+    },
+    {
+      "paragraphIndex": 6,
+      "sentenceIndex": 3,
+      "dutch": "Of je vraagt om een plaatje van een rode fiets.",
+      "english": "Or you ask for a picture of a red bicycle."
+    },
+    {
+      "paragraphIndex": 6,
+      "sentenceIndex": 4,
+      "dutch": "Deze AI heeft veel voorbeelden van taal of beelden gezien.",
+      "english": "This AI has seen many examples of language or images."
+    },
+    {
+      "paragraphIndex": 6,
+      "sentenceIndex": 5,
+      "dutch": "Hij kiest stap voor stap wat goed bij je vraag past.",
+      "english": "Step by step, it chooses what fits your question."
+    },
+    {
+      "paragraphIndex": 7,
+      "sentenceIndex": 0,
+      "dutch": "Zo’n antwoord klinkt soms goed, maar het is niet altijd waar.",
+      "english": "Such an answer sometimes sounds good, but it is not always true."
+    },
+    {
+      "paragraphIndex": 7,
+      "sentenceIndex": 1,
+      "dutch": "AI begrijpt een onderwerp niet zoals een mens.",
+      "english": "AI does not understand a subject like a person does."
+    },
+    {
+      "paragraphIndex": 7,
+      "sentenceIndex": 2,
+      "dutch": "Het systeem kan een verkeerde naam, datum of plaats geven.",
+      "english": "The system can give the wrong name, date, or place."
+    },
+    {
+      "paragraphIndex": 7,
+      "sentenceIndex": 3,
+      "dutch": "Het kan ook belangrijke informatie missen.",
+      "english": "It can also miss important information."
+    },
+    {
+      "paragraphIndex": 7,
+      "sentenceIndex": 4,
+      "dutch": "Controleer daarom een antwoord, vooral bij school, geld, gezondheid of nieuws.",
+      "english": "Therefore, check an answer, especially when it concerns school, money, health, or the news."
+    },
+    {
+      "paragraphIndex": 8,
+      "sentenceIndex": 0,
+      "dutch": "AI helpt dus bij duidelijke taken.",
+      "english": "So AI helps with clear tasks."
+    },
+    {
+      "paragraphIndex": 8,
+      "sentenceIndex": 1,
+      "dutch": "Hij kan snel zoeken, sorteren, voorspellen of iets maken.",
+      "english": "It can quickly search, sort, predict, or create something."
+    },
+    {
+      "paragraphIndex": 8,
+      "sentenceIndex": 2,
+      "dutch": "Maar een mens blijft nodig.",
+      "english": "But a person is still needed."
+    },
+    {
+      "paragraphIndex": 8,
+      "sentenceIndex": 3,
+      "dutch": "Mensen kiezen het doel.",
+      "english": "People choose the goal."
+    },
+    {
+      "paragraphIndex": 8,
+      "sentenceIndex": 4,
+      "dutch": "Mensen controleren het resultaat.",
+      "english": "People check the result."
+    },
+    {
+      "paragraphIndex": 8,
+      "sentenceIndex": 5,
+      "dutch": "En mensen beslissen wat eerlijk, veilig en goed is.",
+      "english": "And people decide what is fair, safe, and good."
+    },
+    {
+      "paragraphIndex": 8,
+      "sentenceIndex": 6,
+      "dutch": "AI is een hulpmiddel in een computer, geen persoon.",
+      "english": "AI is a tool in a computer, not a person."
+    }
+  ]
 }

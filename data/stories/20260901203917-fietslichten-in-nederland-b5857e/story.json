@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "20260901203917-fietslichten-in-nederland-b5857e",
   "request": {
     "type": "topic",
@@ -909,8 +909,138 @@
     "storyModel": "gpt-5.6-terra",
     "storyReasoning": "high",
     "annotationModel": "gpt-5.6-luna",
-    "annotationReasoning": "low"
+    "annotationReasoning": "low",
+    "translationModel": "gpt-5.6-luna",
+    "translationReasoning": "low"
   },
   "createdAt": "2026-09-01T20:40:17.392Z",
-  "updatedAt": "2026-09-01T20:40:45.975Z"
+  "updatedAt": "2026-09-01T21:19:28.412Z",
+  "sentenceTranslations": [
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 0,
+      "dutch": "In Nederland hebben fietsers vaak een eigen verkeerslicht.",
+      "english": "In the Netherlands, cyclists often have their own traffic light."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 1,
+      "dutch": "Het licht staat naast of boven het fietspad.",
+      "english": "The light is next to or above the cycle path."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 2,
+      "dutch": "Soms zie je een fiets op het licht.",
+      "english": "Sometimes you see a bicycle on the light."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 3,
+      "dutch": "Dan is het licht voor fietsers.",
+      "english": "Then the light is for cyclists."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 4,
+      "dutch": "Rood betekent: stop bij de witte streep.",
+      "english": "Red means: stop at the white line."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 5,
+      "dutch": "Groen betekent: je mag doorgaan.",
+      "english": "Green means: you may continue."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 6,
+      "dutch": "Geel betekent ook: stop, als dat nog kan.",
+      "english": "Yellow also means: stop, if you still can."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 0,
+      "dutch": "Bij een druk kruispunt wachten fietsers op groen.",
+      "english": "At a busy intersection, cyclists wait for the green light."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 1,
+      "dutch": "Soms druk je op een knop.",
+      "english": "Sometimes you press a button."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 2,
+      "dutch": "Die knop zegt aan het licht: hier wacht een fietser.",
+      "english": "That button tells the light: a cyclist is waiting here."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 3,
+      "dutch": "Op andere plaatsen ziet een detector de fiets al.",
+      "english": "In other places, a detector already sees the bicycle."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 4,
+      "dutch": "Dan hoeft een fietser niet altijd op een knop te drukken.",
+      "english": "Then a cyclist does not always have to press a button."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 5,
+      "dutch": "Een klein lampje kan laten zien dat het licht je heeft gezien.",
+      "english": "A small light can show that the traffic light has detected you."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 0,
+      "dutch": "Soms krijgen alle fietsers tegelijk groen.",
+      "english": "Sometimes all cyclists get a green light at the same time."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 1,
+      "dutch": "Fietsers kunnen dan ook links afslaan.",
+      "english": "Cyclists can then also turn left."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 2,
+      "dutch": "Kijk dan goed naar andere fietsers.",
+      "english": "Then watch out for other cyclists."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 3,
+      "dutch": "Zij gaan misschien rechtdoor.",
+      "english": "They may be going straight ahead."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 4,
+      "dutch": "Er is soms een bord: “Rechtsaf voor fietsers vrij”.",
+      "english": "Sometimes there is a sign: “Cyclists may turn right.”"
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 5,
+      "dutch": "Dan mag je bij rood rechts af.",
+      "english": "Then you may turn right when the light is red."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 6,
+      "dutch": "Maar je laat ander verkeer eerst gaan.",
+      "english": "But you let other traffic go first."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 7,
+      "dutch": "Zo kunnen fietsers, auto’s en voetgangers veilig oversteken.",
+      "english": "This way, cyclists, cars, and pedestrians can cross safely."
+    }
+  ]
 }

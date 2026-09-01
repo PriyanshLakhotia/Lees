@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   countWords,
   estimateReadingMinutes,
+  extractSentences,
   extractUniqueWords,
   normalizeWord,
 } from './text.mjs';
@@ -32,4 +33,23 @@ test('reading time is level-sensitive and capped at ten minutes', () => {
   assert.equal(estimateReadingMinutes(140, 'A0'), 2);
   assert.equal(estimateReadingMinutes(140, 'C1'), 1);
   assert.equal(estimateReadingMinutes(10_000, 'A2'), 10);
+});
+
+test('segments Dutch paragraphs into indexed complete sentences', () => {
+  assert.deepEqual(
+    extractSentences([
+      'Rood betekent: stop. Ga daarna door.',
+      'Er staat: “Fietsers vrij”. Dat is duidelijk.',
+    ]),
+    [
+      { paragraphIndex: 0, sentenceIndex: 0, dutch: 'Rood betekent: stop.' },
+      { paragraphIndex: 0, sentenceIndex: 1, dutch: 'Ga daarna door.' },
+      {
+        paragraphIndex: 1,
+        sentenceIndex: 0,
+        dutch: 'Er staat: “Fietsers vrij”.',
+      },
+      { paragraphIndex: 1, sentenceIndex: 1, dutch: 'Dat is duidelijk.' },
+    ],
+  );
 });

@@ -73,6 +73,25 @@ ${article}
 ${JSON.stringify(words)}`;
 }
 
+export async function buildSentenceTranslationPrompt(story, sentences) {
+  const base = await readPrompt('translation/base.md');
+
+  return `${base}
+
+---
+
+# Article context
+
+Title: ${story.title}
+CEFR level: ${story.request.level}
+
+---
+
+# Sentences to translate
+
+${JSON.stringify(sentences, null, 2)}`;
+}
+
 export async function buildChatPrompt(story, question, selection) {
   const base = await readPrompt('chat/base.md');
   const article = story.paragraphs.join('\n\n');

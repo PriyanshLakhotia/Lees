@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "paragraphIndex": { "type": "integer", "minimum": 0 },
+          "sentenceIndex": { "type": "integer", "minimum": 0 },
+          "dutch": { "type": "string" },
+          "english": { "type": "string" }
+        },
+        "required": ["paragraphIndex", "sentenceIndex", "dutch", "english"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["entries"],
+  "additionalProperties": false
+}

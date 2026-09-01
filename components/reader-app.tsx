@@ -7,6 +7,7 @@ import {
   Clock3,
   ExternalLink,
   Heart,
+  Languages,
   Library,
   MessageCircle,
   Plus,
@@ -68,6 +69,7 @@ import type {
   GenerationRequest,
   Level,
   ReadingLength,
+  SentenceTranslation,
   Story,
   StorySummary,
 } from '@/lib/contracts';
@@ -186,7 +188,7 @@ function Word({
   );
 }
 
-function AnnotatedParagraph({
+function AnnotatedText({
   text,
   annotations,
 }: {
@@ -194,7 +196,7 @@ function AnnotatedParagraph({
   annotations: Story['annotations'];
 }) {
   return (
-    <p>
+    <>
       {text
         .split(WORD_SPLITTER)
         .map((part, index) =>
@@ -208,7 +210,56 @@ function AnnotatedParagraph({
             <Fragment key={`${index}-${part}`}>{part}</Fragment>
           ),
         )}
+    </>
+  );
+}
+
+function AnnotatedParagraph({
+  text,
+  annotations,
+}: {
+  text: string;
+  annotations: Story['annotations'];
+}) {
+  return (
+    <p lang="nl">
+      <AnnotatedText text={text} annotations={annotations} />
     </p>
+  );
+}
+
+function TranslatedParagraph({
+  paragraphIndex,
+  paragraph,
+  translations,
+  annotations,
+}: {
+  paragraphIndex: number;
+  paragraph: string;
+  translations: SentenceTranslation[];
+  annotations: Story['annotations'];
+}) {
+  const sentences = translations
+    .filter((entry) => entry.paragraphIndex === paragraphIndex)
+    .sort((a, b) => a.sentenceIndex - b.sentenceIndex);
+
+  if (!sentences.length) {
+    return <AnnotatedParagraph text={paragraph} annotations={annotations} />;
+  }
+
+  return (
+    <div className="space-y-5">
+      {sentences.map((sentence) => (
+        <div key={`${sentence.paragraphIndex}-${sentence.sentenceIndex}`}>
+          <p lang="nl">
+            <AnnotatedText text={sentence.dutch} annotations={annotations} />
+          </p>
+          <p className="sentence-translation" lang="en">
+            {sentence.english}
+          </p>
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -323,6 +374,8 @@ export function ReaderApp() {
   const [error, setError] = useState('');
   const [notes, setNotes] = useState('');
   const [savingNotes, setSavingNotes] = useState(false);
+  const [showSentenceTranslations, setShowSentenceTranslations] =
+    useState(false);
   const [selection, setSelection] = useState('');
   const [chatOpen, setChatOpen] = useState(false);
   const [chatQuestion, setChatQuestion] = useState('');
@@ -343,6 +396,7 @@ export function ReaderApp() {
     setSelectedId(id);
     setSelection('');
     setChatMessages([]);
+    setShowSentenceTranslations(false);
     setView('reader');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -691,6 +745,22 @@ export function ReaderApp() {
                     year: 'numeric',
                   })}
                 </span>
+                {story.sentenceTranslations?.length ? (
+                  <Button
+                    variant={showSentenceTranslations ? 'secondary' : 'ghost'}
+                    size="xs"
+                    className="ml-auto sm:ml-0"
+                    aria-pressed={showSentenceTranslations}
+                    onClick={() =>
+                      setShowSentenceTranslations((current) => !current)
+                    }
+                  >
+                    <Languages />
+                    {showSentenceTranslations
+                      ? 'Hide English'
+                      : 'Sentence translations'}
+                  </Button>
+                ) : null}
               </div>
 
               <h1 className="article-title">{story.title}</h1>
@@ -698,14 +768,26 @@ export function ReaderApp() {
                 {story.subtitle}
               </p>
 
-              <div className="article-copy mt-9 space-y-6">
-                {story.paragraphs.map((paragraph, index) => (
-                  <AnnotatedParagraph
-                    key={index}
-                    text={paragraph}
-                    annotations={story.annotations}
-                  />
-                ))}
+              <div
+                className={`article-copy mt-9 ${showSentenceTranslations ? 'space-y-8' : 'space-y-6'}`}
+              >
+                {story.paragraphs.map((paragraph, index) =>
+                  showSentenceTranslations ? (
+                    <TranslatedParagraph
+                      key={index}
+                      paragraphIndex={index}
+                      paragraph={paragraph}
+                      translations={story.sentenceTranslations || []}
+                      annotations={story.annotations}
+                    />
+                  ) : (
+                    <AnnotatedParagraph
+                      key={index}
+                      text={paragraph}
+                      annotations={story.annotations}
+                    />
+                  ),
+                )}
               </div>
 
               <div className="mt-10 flex flex-wrap items-center gap-2 border-t border-border pt-5">
