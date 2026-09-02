@@ -22,6 +22,7 @@ import {
   SyntheticEvent,
   useCallback,
   useEffect,
+  useId,
   useMemo,
   useRef,
   useState,
@@ -59,6 +60,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from '@/components/ui/sheet';
+import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
 import { api } from '@/lib/api';
 import type {
@@ -138,10 +140,14 @@ function FieldLabel({ children }: { children: ReactNode }) {
 function Word({
   surface,
   annotation,
+  sentence,
 }: {
   surface: string;
   annotation?: Annotation;
+  sentence?: SentenceTranslation;
 }) {
+  const sentenceSwitchId = useId();
+  const [showSentence, setShowSentence] = useState(false);
   const fallback: Annotation = {
     word: normalizeWord(surface),
     lemma: normalizeWord(surface),
@@ -160,7 +166,10 @@ function Word({
       >
         {surface}
       </PopoverTrigger>
-      <PopoverContent align="start" className="w-72 rounded-xl p-4">
+      <PopoverContent
+        align="start"
+        className="w-80 max-w-[calc(100vw-2rem)] rounded-xl p-4"
+      >
         <PopoverHeader>
           <div className="flex items-baseline justify-between gap-4">
             <PopoverTitle className="font-serif text-lg">
@@ -183,6 +192,41 @@ function Word({
             <p>{entry.exampleEn}</p>
           </div>
         ) : null}
+        {sentence ? (
+          <div className="mt-1 border-t border-border pt-3">
+            <div className="flex items-center justify-between gap-4">
+              <label
+                htmlFor={sentenceSwitchId}
+                className="min-w-0 cursor-pointer"
+              >
+                <span className="flex items-center gap-1.5 text-xs font-medium text-foreground">
+                  <Languages className="size-3.5 text-muted-foreground" />
+                  Sentence
+                </span>
+                <span className="mt-0.5 block text-[11px] text-muted-foreground">
+                  Show the translation in context
+                </span>
+              </label>
+              <Switch
+                id={sentenceSwitchId}
+                size="sm"
+                checked={showSentence}
+                onCheckedChange={setShowSentence}
+                aria-label="Show sentence translation"
+              />
+            </div>
+            {showSentence ? (
+              <div className="mt-3 rounded-lg bg-muted/60 p-3 text-xs leading-5">
+                <p className="font-serif text-[13px] text-foreground" lang="nl">
+                  {sentence.dutch}
+                </p>
+                <p className="mt-1 text-muted-foreground" lang="en">
+                  {sentence.english}
+                </p>
+              </div>
+            ) : null}
+          </div>
+        ) : null}
       </PopoverContent>
     </Popover>
   );
@@ -191,9 +235,11 @@ function Word({
 function AnnotatedText({
   text,
   annotations,
+  sentence,
 }: {
   text: string;
   annotations: Story['annotations'];
+  sentence?: SentenceTranslation;
 }) {
   return (
     <>
@@ -205,6 +251,7 @@ function AnnotatedText({
               key={`${index}-${part}`}
               surface={part}
               annotation={annotations[normalizeWord(part)]}
+              sentence={sentence}
             />
           ) : (
             <Fragment key={`${index}-${part}`}>{part}</Fragment>
@@ -215,51 +262,39 @@ function AnnotatedText({
 }
 
 function AnnotatedParagraph({
+  paragraphIndex,
   text,
   annotations,
-}: {
-  text: string;
-  annotations: Story['annotations'];
-}) {
-  return (
-    <p lang="nl">
-      <AnnotatedText text={text} annotations={annotations} />
-    </p>
-  );
-}
-
-function TranslatedParagraph({
-  paragraphIndex,
-  paragraph,
   translations,
-  annotations,
 }: {
   paragraphIndex: number;
-  paragraph: string;
-  translations: SentenceTranslation[];
+  text: string;
   annotations: Story['annotations'];
+  translations: SentenceTranslation[];
 }) {
   const sentences = translations
     .filter((entry) => entry.paragraphIndex === paragraphIndex)
     .sort((a, b) => a.sentenceIndex - b.sentenceIndex);
 
-  if (!sentences.length) {
-    return <AnnotatedParagraph text={paragraph} annotations={annotations} />;
-  }
-
   return (
-    <div className="space-y-5">
-      {sentences.map((sentence) => (
-        <div key={`${sentence.paragraphIndex}-${sentence.sentenceIndex}`}>
-          <p lang="nl">
-            <AnnotatedText text={sentence.dutch} annotations={annotations} />
-          </p>
-          <p className="sentence-translation" lang="en">
-            {sentence.english}
-          </p>
-        </div>
-      ))}
-    </div>
+    <p lang="nl">
+      {sentences.length ? (
+        sentences.map((sentence, index) => (
+          <Fragment
+            key={`${sentence.paragraphIndex}-${sentence.sentenceIndex}`}
+          >
+            {index ? ' ' : null}
+            <AnnotatedText
+              text={sentence.dutch}
+              annotations={annotations}
+              sentence={sentence}
+            />
+          </Fragment>
+        ))
+      ) : (
+        <AnnotatedText text={text} annotations={annotations} />
+      )}
+    </p>
   );
 }
 
@@ -374,8 +409,6 @@ export function ReaderApp() {
   const [error, setError] = useState('');
   const [notes, setNotes] = useState('');
   const [savingNotes, setSavingNotes] = useState(false);
-  const [showSentenceTranslations, setShowSentenceTranslations] =
-    useState(false);
   const [selection, setSelection] = useState('');
   const [chatOpen, setChatOpen] = useState(false);
   const [chatQuestion, setChatQuestion] = useState('');
@@ -396,7 +429,6 @@ export function ReaderApp() {
     setSelectedId(id);
     setSelection('');
     setChatMessages([]);
-    setShowSentenceTranslations(false);
     setView('reader');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -745,22 +777,6 @@ export function ReaderApp() {
                     year: 'numeric',
                   })}
                 </span>
-                {story.sentenceTranslations?.length ? (
-                  <Button
-                    variant={showSentenceTranslations ? 'secondary' : 'ghost'}
-                    size="xs"
-                    className="ml-auto sm:ml-0"
-                    aria-pressed={showSentenceTranslations}
-                    onClick={() =>
-                      setShowSentenceTranslations((current) => !current)
-                    }
-                  >
-                    <Languages />
-                    {showSentenceTranslations
-                      ? 'Hide English'
-                      : 'Sentence translations'}
-                  </Button>
-                ) : null}
               </div>
 
               <h1 className="article-title">{story.title}</h1>
@@ -768,26 +784,16 @@ export function ReaderApp() {
                 {story.subtitle}
               </p>
 
-              <div
-                className={`article-copy mt-9 ${showSentenceTranslations ? 'space-y-8' : 'space-y-6'}`}
-              >
-                {story.paragraphs.map((paragraph, index) =>
-                  showSentenceTranslations ? (
-                    <TranslatedParagraph
-                      key={index}
-                      paragraphIndex={index}
-                      paragraph={paragraph}
-                      translations={story.sentenceTranslations || []}
-                      annotations={story.annotations}
-                    />
-                  ) : (
-                    <AnnotatedParagraph
-                      key={index}
-                      text={paragraph}
-                      annotations={story.annotations}
-                    />
-                  ),
-                )}
+              <div className="article-copy mt-9 space-y-6">
+                {story.paragraphs.map((paragraph, index) => (
+                  <AnnotatedParagraph
+                    key={index}
+                    paragraphIndex={index}
+                    text={paragraph}
+                    annotations={story.annotations}
+                    translations={story.sentenceTranslations || []}
+                  />
+                ))}
               </div>
 
               <div className="mt-10 flex flex-wrap items-center gap-2 border-t border-border pt-5">

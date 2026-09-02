@@ -120,11 +120,6 @@
     @apply text-[17px] leading-[1.9] text-foreground sm:text-[18px];
   }
 
-  .sentence-translation {
-    font-family: var(--font-ui), sans-serif;
-    @apply mt-1.5 text-[13px] leading-5 text-muted-foreground;
-  }
-
   .explained-word {
     font: inherit;
     @apply cursor-pointer rounded-[3px] border-0 px-[1px] text-left text-inherit transition-colors hover:bg-primary/12 focus-visible:ring-2 focus-visible:ring-ring/50;
