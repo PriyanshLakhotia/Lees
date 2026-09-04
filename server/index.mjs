@@ -12,7 +12,13 @@ import {
   updateStoryState,
 } from './storage.mjs';
 
-const CONTENT_TYPES = new Set(['news', 'topic', 'history', 'fiction']);
+const CONTENT_TYPES = new Set([
+  'news',
+  'topic',
+  'history',
+  'fiction',
+  'lesson',
+]);
 const LEVELS = new Set(['A0', 'A1', 'A2', 'B1', 'B2', 'C1']);
 const LENGTHS = new Set(['short', 'medium', 'long']);
 const GENRES = new Set([

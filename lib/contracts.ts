@@ -1,4 +1,4 @@
-export type ContentType = 'news' | 'topic' | 'history' | 'fiction';
+export type ContentType = 'news' | 'topic' | 'history' | 'fiction' | 'lesson';
 export type Level = 'A0' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
 export type ReadingLength = 'short' | 'medium' | 'long';
 

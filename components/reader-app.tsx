@@ -6,6 +6,7 @@ import {
   Check,
   Clock3,
   ExternalLink,
+  GraduationCap,
   Heart,
   Languages,
   Library,
@@ -61,6 +62,7 @@ import {
   SheetTitle,
 } from '@/components/ui/sheet';
 import { Switch } from '@/components/ui/switch';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Textarea } from '@/components/ui/textarea';
 import { api } from '@/lib/api';
 import type {
@@ -98,11 +100,26 @@ const GENRES = [
   ['romance', 'Romance'],
 ] as const;
 
+const GRAMMAR_TOPICS = [
+  ['sentence-order', 'Sentence order'],
+  ['verbs-and-tenses', 'Verbs & tenses'],
+  ['articles-and-gender', 'De, het & gender'],
+  ['pronouns', 'Pronouns'],
+  ['adjectives', 'Adjectives'],
+  ['prepositions', 'Prepositions'],
+  ['negation', 'Negation'],
+  ['conjunctions', 'Conjunctions'],
+  ['separable-verbs', 'Separable verbs'],
+  ['question-forms', 'Questions'],
+  ['mixed-review', 'Mixed review'],
+] as const;
+
 const TYPE_LABELS: Record<ContentType, string> = {
   news: 'Current news',
   topic: 'Topic explainer',
   history: 'History & culture',
   fiction: 'Fiction',
+  lesson: 'Grammar lesson',
 };
 
 const LENGTH_LABELS: Record<ReadingLength, string> = {
@@ -124,6 +141,7 @@ const WORD_SPLITTER = /([\p{L}\p{M}]+(?:['’-][\p{L}\p{M}]+)*)/gu;
 const WORD_ONLY = /^[\p{L}\p{M}]+(?:['’-][\p{L}\p{M}]+)*$/u;
 
 type AppView = 'library' | 'reader';
+type LibrarySection = 'reading' | 'lessons';
 type LibraryFilter = 'all' | 'unread' | 'favourites';
 type ChatMessage =
   | { id: string; role: 'user'; text: string; selection: string }
@@ -362,7 +380,12 @@ function StoryCard({
             {item.level}
           </span>
           <span className="text-[11px] text-muted-foreground">
-            {TYPE_LABELS[item.type]}
+            <span className="flex items-center gap-1.5">
+              {item.type === 'lesson' ? (
+                <GraduationCap className="size-3.5" />
+              ) : null}
+              {TYPE_LABELS[item.type]}
+            </span>
           </span>
         </span>
         {item.favourite ? (
@@ -395,8 +418,102 @@ function StoryCard({
   );
 }
 
+function LibraryShelf({
+  stories,
+  visibleStories,
+  filter,
+  loading,
+  section,
+  onFilter,
+  onOpen,
+  onGenerate,
+}: {
+  stories: StorySummary[];
+  visibleStories: StorySummary[];
+  filter: LibraryFilter;
+  loading: boolean;
+  section: LibrarySection;
+  onFilter: (filter: LibraryFilter) => void;
+  onOpen: (id: string) => void;
+  onGenerate: () => void;
+}) {
+  const isLessons = section === 'lessons';
+  const readCount = stories.filter((item) => item.read).length;
+  const favouriteCount = stories.filter((item) => item.favourite).length;
+
+  return (
+    <section>
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="grid w-full grid-cols-3 rounded-lg bg-muted p-0.5 sm:w-[300px]">
+          {(['all', 'unread', 'favourites'] as const).map((value) => (
+            <button
+              type="button"
+              key={value}
+              className={`filter-tab ${filter === value ? 'filter-tab-active' : ''}`}
+              onClick={() => onFilter(value)}
+            >
+              {value === 'all'
+                ? 'All'
+                : value === 'unread'
+                  ? 'Unread'
+                  : 'Favourites'}
+            </button>
+          ))}
+        </div>
+        <p className="text-xs text-muted-foreground">
+          {stories.length} saved · {readCount} read · {favouriteCount}{' '}
+          favourites
+        </p>
+      </div>
+
+      {loading ? (
+        <div className="flex min-h-64 items-center justify-center">
+          <span className="size-5 animate-spin rounded-full border-2 border-primary/25 border-t-primary" />
+        </div>
+      ) : visibleStories.length ? (
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {visibleStories.map((item) => (
+            <StoryCard key={item.id} item={item} onOpen={onOpen} />
+          ))}
+        </div>
+      ) : (
+        <div className="mt-6 flex min-h-72 flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/50 px-6 text-center">
+          <div className="flex size-11 items-center justify-center rounded-xl border border-border bg-background">
+            {isLessons ? (
+              <GraduationCap className="size-5 text-primary" />
+            ) : (
+              <Library className="size-5 text-primary" />
+            )}
+          </div>
+          <h2 className="mt-4 font-serif text-xl font-medium">
+            {stories.length
+              ? `No ${isLessons ? 'lessons' : 'texts'} in this view`
+              : isLessons
+                ? 'No grammar lessons yet'
+                : 'Your reading library is empty'}
+          </h2>
+          <p className="mt-2 max-w-sm text-sm leading-6 text-muted-foreground">
+            {stories.length
+              ? 'Try another filter to see the rest of this section.'
+              : isLessons
+                ? 'Generate a focused Dutch grammar lesson at your current level.'
+                : 'Generate a Dutch text and it will be saved here automatically.'}
+          </p>
+          {!stories.length ? (
+            <Button className="mt-5" onClick={onGenerate}>
+              <Plus /> {isLessons ? 'Generate a lesson' : 'Generate a text'}
+            </Button>
+          ) : null}
+        </div>
+      )}
+    </section>
+  );
+}
+
 export function ReaderApp() {
   const [view, setView] = useState<AppView>('library');
+  const [librarySection, setLibrarySection] =
+    useState<LibrarySection>('reading');
   const [generateOpen, setGenerateOpen] = useState(false);
   const [request, setRequest] = useState(DEFAULT_REQUEST);
   const [stories, setStories] = useState<StorySummary[]>([]);
@@ -441,8 +558,35 @@ export function ReaderApp() {
   }
 
   function showGenerator() {
+    setRequest((current) => {
+      if (librarySection === 'lessons') {
+        return current.type === 'lesson'
+          ? current
+          : { ...current, type: 'lesson', topic: 'sentence-order' };
+      }
+      return current.type === 'lesson'
+        ? { ...current, type: 'news', topic: 'technology' }
+        : current;
+    });
     setError('');
     setGenerateOpen(true);
+  }
+
+  function selectContentType(type: ContentType) {
+    setRequest((current) => {
+      let topic = current.topic;
+      if (type === 'lesson' && current.type !== 'lesson') {
+        topic = 'sentence-order';
+      } else if (type === 'fiction') {
+        topic = 'fiction';
+      } else if (
+        type !== 'lesson' &&
+        (current.type === 'lesson' || current.type === 'fiction')
+      ) {
+        topic = 'technology';
+      }
+      return { ...current, type, topic };
+    });
   }
 
   useEffect(() => {
@@ -499,20 +643,37 @@ export function ReaderApp() {
     return () => window.clearInterval(interval);
   }, [refreshLibrary]);
 
-  const visibleStories = useMemo(() => {
-    if (filter === 'unread') return stories.filter((item) => !item.read);
-    if (filter === 'favourites')
-      return stories.filter((item) => item.favourite);
-    return stories;
-  }, [filter, stories]);
+  const readingStories = useMemo(
+    () => stories.filter((item) => item.type !== 'lesson'),
+    [stories],
+  );
+  const lessonStories = useMemo(
+    () => stories.filter((item) => item.type === 'lesson'),
+    [stories],
+  );
+  const filterStories = useCallback(
+    (items: StorySummary[]) => {
+      if (filter === 'unread') return items.filter((item) => !item.read);
+      if (filter === 'favourites')
+        return items.filter((item) => item.favourite);
+      return items;
+    },
+    [filter],
+  );
+  const visibleReadingStories = useMemo(
+    () => filterStories(readingStories),
+    [filterStories, readingStories],
+  );
+  const visibleLessonStories = useMemo(
+    () => filterStories(lessonStories),
+    [filterStories, lessonStories],
+  );
 
   const activeJobs = jobs.filter(
     (job) => job.status === 'queued' || job.status === 'running',
   );
   const failedJobs = jobs.filter((job) => job.status === 'failed').slice(0, 2);
   const visibleJobs = [...activeJobs, ...failedJobs];
-  const readCount = stories.filter((item) => item.read).length;
-  const favouriteCount = stories.filter((item) => item.favourite).length;
 
   async function submitGeneration(event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -526,6 +687,7 @@ export function ReaderApp() {
       const { job } = await api.generate(payload);
       setJobs((current) => [job, ...current]);
       setRequest((current) => ({ ...current, idea: '' }));
+      setLibrarySection(payload.type === 'lesson' ? 'lessons' : 'reading');
       setGenerateOpen(false);
     } catch (reason) {
       setError(reason instanceof Error ? reason.message : String(reason));
@@ -635,7 +797,10 @@ export function ReaderApp() {
 
           {view === 'library' ? (
             <Button size="sm" onClick={showGenerator}>
-              <Plus /> Generate text
+              <Plus />
+              {librarySection === 'lessons'
+                ? 'Generate lesson'
+                : 'Generate text'}
             </Button>
           ) : (
             <Button variant="ghost" size="sm" onClick={returnToLibrary}>
@@ -651,11 +816,11 @@ export function ReaderApp() {
             <div>
               <p className="eyebrow">Library</p>
               <h1 className="mt-2 text-3xl font-semibold tracking-[-0.035em] sm:text-4xl">
-                Your Dutch texts
+                Your Dutch library
               </h1>
               <p className="mt-3 max-w-xl text-sm leading-6 text-muted-foreground">
-                Choose a text to start reading. New generations run in the
-                background and appear here when they are ready.
+                Read Dutch texts or study a focused grammar lesson at your
+                level.
               </p>
             </div>
           </section>
@@ -688,63 +853,53 @@ export function ReaderApp() {
             </section>
           ) : null}
 
-          <section className="mt-10">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div className="grid w-full grid-cols-3 rounded-lg bg-muted p-0.5 sm:w-[300px]">
-                {(['all', 'unread', 'favourites'] as const).map((value) => (
-                  <button
-                    type="button"
-                    key={value}
-                    className={`filter-tab ${filter === value ? 'filter-tab-active' : ''}`}
-                    onClick={() => setFilter(value)}
-                  >
-                    {value === 'all'
-                      ? 'All'
-                      : value === 'unread'
-                        ? 'Unread'
-                        : 'Favourites'}
-                  </button>
-                ))}
-              </div>
-              <p className="text-xs text-muted-foreground">
-                {stories.length} saved · {readCount} read · {favouriteCount}{' '}
-                favourites
-              </p>
-            </div>
-
-            {loadingLibrary ? (
-              <div className="flex min-h-64 items-center justify-center">
-                <span className="size-5 animate-spin rounded-full border-2 border-primary/25 border-t-primary" />
-              </div>
-            ) : visibleStories.length ? (
-              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {visibleStories.map((item) => (
-                  <StoryCard key={item.id} item={item} onOpen={openStory} />
-                ))}
-              </div>
-            ) : (
-              <div className="mt-6 flex min-h-72 flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/50 px-6 text-center">
-                <div className="flex size-11 items-center justify-center rounded-xl border border-border bg-background">
-                  <Library className="size-5 text-primary" />
-                </div>
-                <h2 className="mt-4 font-serif text-xl font-medium">
-                  {stories.length
-                    ? 'No texts in this view'
-                    : 'Your library is empty'}
-                </h2>
-                <p className="mt-2 max-w-sm text-sm leading-6 text-muted-foreground">
-                  {stories.length
-                    ? 'Try another filter to see the rest of your library.'
-                    : 'Generate a short Dutch text and it will be saved here automatically.'}
-                </p>
-                {!stories.length ? (
-                  <Button className="mt-5" onClick={showGenerator}>
-                    <Plus /> Generate a text
-                  </Button>
-                ) : null}
-              </div>
-            )}
-          </section>
+          <Tabs
+            className="mt-10"
+            value={librarySection}
+            onValueChange={(value) => {
+              setLibrarySection(value as LibrarySection);
+              setFilter('all');
+            }}
+          >
+            <TabsList className="h-10 w-full p-1 sm:w-auto">
+              <TabsTrigger value="reading" className="gap-2 px-4">
+                <BookOpen /> Reading
+                <span className="rounded-full bg-background/80 px-1.5 text-xs text-muted-foreground">
+                  {readingStories.length}
+                </span>
+              </TabsTrigger>
+              <TabsTrigger value="lessons" className="gap-2 px-4">
+                <GraduationCap /> Lessons
+                <span className="rounded-full bg-background/80 px-1.5 text-xs text-muted-foreground">
+                  {lessonStories.length}
+                </span>
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="reading" className="mt-6">
+              <LibraryShelf
+                stories={readingStories}
+                visibleStories={visibleReadingStories}
+                filter={filter}
+                loading={loadingLibrary}
+                section="reading"
+                onFilter={setFilter}
+                onOpen={openStory}
+                onGenerate={showGenerator}
+              />
+            </TabsContent>
+            <TabsContent value="lessons" className="mt-6">
+              <LibraryShelf
+                stories={lessonStories}
+                visibleStories={visibleLessonStories}
+                filter={filter}
+                loading={loadingLibrary}
+                section="lessons"
+                onFilter={setFilter}
+                onOpen={openStory}
+                onGenerate={showGenerator}
+              />
+            </TabsContent>
+          </Tabs>
         </div>
       ) : (
         <div className="min-h-[calc(100vh-65px)] bg-paper">
@@ -903,10 +1058,14 @@ export function ReaderApp() {
           <form onSubmit={submitGeneration}>
             <DialogHeader className="px-5 pt-5 pr-12 sm:px-6 sm:pt-6">
               <DialogTitle className="text-lg">
-                Generate a Dutch text
+                {request.type === 'lesson'
+                  ? 'Generate a grammar lesson'
+                  : 'Generate a Dutch text'}
               </DialogTitle>
               <DialogDescription>
-                Choose the kind of text, reading level, and length.
+                {request.type === 'lesson'
+                  ? 'Choose a grammar focus, reading level, and lesson length.'
+                  : 'Choose the kind of text, reading level, and length.'}
               </DialogDescription>
             </DialogHeader>
 
@@ -916,11 +1075,7 @@ export function ReaderApp() {
                 <Select
                   value={request.type}
                   onValueChange={(value) =>
-                    value &&
-                    setRequest((current) => ({
-                      ...current,
-                      type: value as ContentType,
-                    }))
+                    value && selectContentType(value as ContentType)
                   }
                 >
                   <SelectTrigger className="h-10 w-full bg-background">
@@ -952,6 +1107,33 @@ export function ReaderApp() {
                     </SelectTrigger>
                     <SelectContent align="start">
                       {GENRES.map(([value, label]) => (
+                        <SelectItem value={value} key={value}>
+                          {label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+              ) : request.type === 'lesson' ? (
+                <div className="grid gap-2">
+                  <FieldLabel>Grammar focus</FieldLabel>
+                  <Select
+                    value={request.topic}
+                    onValueChange={(topic) =>
+                      topic && setRequest((current) => ({ ...current, topic }))
+                    }
+                  >
+                    <SelectTrigger className="h-10 w-full bg-background">
+                      <SelectValue>
+                        {
+                          GRAMMAR_TOPICS.find(
+                            ([value]) => value === request.topic,
+                          )?.[1]
+                        }
+                      </SelectValue>
+                    </SelectTrigger>
+                    <SelectContent align="start">
+                      {GRAMMAR_TOPICS.map(([value, label]) => (
                         <SelectItem value={value} key={value}>
                           {label}
                         </SelectItem>
@@ -995,7 +1177,9 @@ export function ReaderApp() {
                   placeholder={
                     request.type === 'fiction'
                       ? 'e.g. a lost key in Utrecht'
-                      : 'e.g. reusable rockets'
+                      : request.type === 'lesson'
+                        ? 'e.g. word order after omdat'
+                        : 'e.g. reusable rockets'
                   }
                   value={request.idea}
                   onChange={(event) =>
@@ -1086,7 +1270,9 @@ export function ReaderApp() {
                 ) : (
                   <Sparkles />
                 )}
-                Generate text
+                {request.type === 'lesson'
+                  ? 'Generate lesson'
+                  : 'Generate text'}
               </Button>
             </DialogFooter>
           </form>

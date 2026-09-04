@@ -39,12 +39,13 @@ export async function buildStoryPrompt(request) {
 - Content type: ${request.type}
 - Topic category: ${request.topic}
 - Fiction genre: ${request.type === 'fiction' ? request.genre : 'not applicable'}
+- Grammar category: ${request.type === 'lesson' ? request.topic : 'not applicable'}
 - Specific idea: ${request.idea || 'Choose a specific, interesting angle within the topic category.'}
 - CEFR level: ${request.level}
 - Reading length: ${request.length}
 - The summaryEnglish field is a neutral one-sentence library description, not part of the Dutch article.
 - Paragraph strings contain only the reading text; do not put headings, bullets, or source notes inside them.
-- For factual content, the sources array must contain direct URLs you actually used. For fiction it should be empty unless browsing was necessary.`;
+- For factual reading texts, the sources array must contain direct URLs you actually used. For fiction and grammar lessons it should be empty.`;
 
   return [base, type, level, length, requestModule].join('\n\n---\n\n');
 }

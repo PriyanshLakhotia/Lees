@@ -1,6 +1,6 @@
 # Lees
 
-A private, local Dutch reading tool. It generates level-appropriate news adaptations, explainers, history/culture texts, and fiction through the authenticated Codex CLI.
+A private, local Dutch reading tool. It generates level-appropriate news adaptations, explainers, history/culture texts, fiction, and grammar lessons through the authenticated Codex CLI.
 
 ## Run locally
 
@@ -28,6 +28,7 @@ npm start
 - Dutch texts and factual research: `gpt-5.6-terra`, high reasoning
 - Word meanings, sentence translations, and reading chat: `gpt-5.6-luna`, low reasoning
 - Current and factual content uses Codex web search and stores the source links.
+- Grammar lessons are reading-first Dutch explainers with level-appropriate examples and their own library section.
 - Each generation is an independent background job. Up to three texts can generate concurrently.
 - Codex runs are ephemeral and read-only. No OpenAI API key is needed when the CLI is signed in with ChatGPT.
 

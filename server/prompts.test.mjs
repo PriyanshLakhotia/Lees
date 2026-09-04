@@ -40,3 +40,19 @@ test('sentence translation prompt preserves indexed source sentences', async () 
   assert.match(prompt, /"paragraphIndex": 0/);
   assert.match(prompt, /De trein komt aan\./);
 });
+
+test('lesson prompt adds the grammar module and selected focus', async () => {
+  const prompt = await buildStoryPrompt({
+    type: 'lesson',
+    topic: 'sentence-order',
+    genre: 'slice-of-life',
+    idea: 'word order after omdat',
+    level: 'B1',
+    length: 'medium',
+  });
+
+  assert.match(prompt, /Content module: grammar lesson/);
+  assert.match(prompt, /Grammar category: sentence-order/);
+  assert.match(prompt, /word order after omdat/);
+  assert.match(prompt, /Do not use web search/);
+});

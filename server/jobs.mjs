@@ -134,7 +134,12 @@ async function runGeneration(job) {
     updateJob(job, {
       status: 'running',
       stage: 'drafting',
-      detail: 'Researching and writing',
+      detail:
+        job.request.type === 'lesson'
+          ? 'Writing the grammar lesson'
+          : job.request.type === 'fiction'
+            ? 'Writing your story'
+            : 'Researching and writing',
     });
     const prompt = await buildStoryPrompt(job.request);
     const draft = validateDraft(
@@ -143,7 +148,7 @@ async function runGeneration(job) {
         model: 'gpt-5.6-terra',
         effort: 'high',
         schemaPath: path.join(SCHEMAS_DIRECTORY, 'story-draft.schema.json'),
-        search: job.request.type !== 'fiction',
+        search: !['fiction', 'lesson'].includes(job.request.type),
       }),
     );
 
