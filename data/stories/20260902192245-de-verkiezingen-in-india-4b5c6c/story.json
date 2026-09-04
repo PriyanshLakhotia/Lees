@@ -1,0 +1,966 @@
+{
+  "schemaVersion": 2,
+  "id": "20260902192245-de-verkiezingen-in-india-4b5c6c",
+  "request": {
+    "type": "topic",
+    "topic": "history",
+    "genre": "slice-of-life",
+    "idea": "2024 indian general elections",
+    "level": "A1",
+    "length": "short"
+  },
+  "title": "De verkiezingen in India",
+  "subtitle": "Zeven dagen om te stemmen",
+  "summaryEnglish": "A short A1-level overview of India’s 2024 general election and its outcome.",
+  "paragraphs": [
+    "In 2024 waren er grote verkiezingen in India. Mensen stemden voor de Lok Sabha. Dat is een deel van het parlement. Er zijn 543 plaatsen. Elke plaats kiest één persoon. Deze mensen maken wetten voor India. India is heel groot. Daarom kon niet iedereen op één dag stemmen.",
+    "De eerste stemdag was 19 april. De laatste was 1 juni. Er waren zeven stemdagen. Op 4 juni telden mensen de stemmen. Ongeveer 66 van de 100 kiezers stemden. Veel mensen liepen naar een stembureau in hun buurt. Daar kozen zij een kandidaat.",
+    "De partij BJP kreeg de meeste plaatsen: 240. Dat was geen meerderheid voor één partij. Daarom werkte de BJP met andere partijen samen. Deze groep heet de NDA. De president koos Narendra Modi als premier. Op 9 juni heeft hij de eed afgelegd. Dat is zijn derde keer als premier."
+  ],
+  "tags": [
+    "India",
+    "verkiezingen",
+    "geschiedenis"
+  ],
+  "sources": [
+    {
+      "title": "General Elections 2024: poll days and schedule",
+      "publisher": "Election Commission of India",
+      "url": "https://elections24.eci.gov.in/docs/press-note-no-23.pdf",
+      "publishedAt": "2024-03-16",
+      "retrievedAt": "2026-09-02T19:22:45.556Z"
+    },
+    {
+      "title": "Atlas: Lok Sabha Elections 2024, parliamentary seats",
+      "publisher": "Election Commission of India",
+      "url": "https://www.eci.gov.in/EBooks/atlas-2024/files/basic-html/page33.html",
+      "publishedAt": "2025-02-14",
+      "retrievedAt": "2026-09-02T19:22:45.556Z"
+    },
+    {
+      "title": "Press communiqué on the appointment of Narendra Modi",
+      "publisher": "President of India",
+      "url": "https://presidentofindia.nic.in/press_releases/press-communique-13",
+      "publishedAt": "2024-06-07",
+      "retrievedAt": "2026-09-02T19:22:45.556Z"
+    }
+  ],
+  "wordCount": 132,
+  "readingMinutes": 2,
+  "annotations": {
+    "in": {
+      "word": "in",
+      "lemma": "in",
+      "meaning": "in",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "waren": {
+      "word": "waren",
+      "lemma": "zijn",
+      "meaning": "were",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "er": {
+      "word": "er",
+      "lemma": "er",
+      "meaning": "there",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "grote": {
+      "word": "grote",
+      "lemma": "groot",
+      "meaning": "large",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "verkiezingen": {
+      "word": "verkiezingen",
+      "lemma": "verkiezing",
+      "meaning": "elections",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "india": {
+      "word": "india",
+      "lemma": "India",
+      "meaning": "India",
+      "partOfSpeech": "name",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "mensen": {
+      "word": "mensen",
+      "lemma": "mens",
+      "meaning": "people",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stemden": {
+      "word": "stemden",
+      "lemma": "stemmen",
+      "meaning": "voted",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "voor": {
+      "word": "voor",
+      "lemma": "voor",
+      "meaning": "for",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "de": {
+      "word": "de",
+      "lemma": "de",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "lok": {
+      "word": "lok",
+      "lemma": "Lok Sabha",
+      "meaning": "Lok",
+      "partOfSpeech": "name",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "sabha": {
+      "word": "sabha",
+      "lemma": "Lok Sabha",
+      "meaning": "Sabha",
+      "partOfSpeech": "name",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dat": {
+      "word": "dat",
+      "lemma": "dat",
+      "meaning": "that",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "is": {
+      "word": "is",
+      "lemma": "zijn",
+      "meaning": "is",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "een": {
+      "word": "een",
+      "lemma": "een",
+      "meaning": "a",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "deel": {
+      "word": "deel",
+      "lemma": "deel",
+      "meaning": "part",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "van": {
+      "word": "van",
+      "lemma": "van",
+      "meaning": "of",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "het": {
+      "word": "het",
+      "lemma": "het",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "parlement": {
+      "word": "parlement",
+      "lemma": "parlement",
+      "meaning": "parliament",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zijn": {
+      "word": "zijn",
+      "lemma": "zijn",
+      "meaning": "are",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plaatsen": {
+      "word": "plaatsen",
+      "lemma": "plaats",
+      "meaning": "seats",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "elke": {
+      "word": "elke",
+      "lemma": "elk",
+      "meaning": "each",
+      "partOfSpeech": "pronoun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plaats": {
+      "word": "plaats",
+      "lemma": "plaats",
+      "meaning": "place",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kiest": {
+      "word": "kiest",
+      "lemma": "kiezen",
+      "meaning": "chooses",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "één": {
+      "word": "één",
+      "lemma": "één",
+      "meaning": "one",
+      "partOfSpeech": "numeral",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "persoon": {
+      "word": "persoon",
+      "lemma": "persoon",
+      "meaning": "person",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "deze": {
+      "word": "deze",
+      "lemma": "deze",
+      "meaning": "these",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "maken": {
+      "word": "maken",
+      "lemma": "maken",
+      "meaning": "make",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "wetten": {
+      "word": "wetten",
+      "lemma": "wet",
+      "meaning": "laws",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heel": {
+      "word": "heel",
+      "lemma": "heel",
+      "meaning": "very",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "groot": {
+      "word": "groot",
+      "lemma": "groot",
+      "meaning": "big",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "daarom": {
+      "word": "daarom",
+      "lemma": "daarom",
+      "meaning": "therefore",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "Het regent, daarom blijf ik thuis.",
+      "exampleEn": "It is raining, so I stay home."
+    },
+    "kon": {
+      "word": "kon",
+      "lemma": "kunnen",
+      "meaning": "could",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "niet": {
+      "word": "niet",
+      "lemma": "niet",
+      "meaning": "not",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "iedereen": {
+      "word": "iedereen",
+      "lemma": "iedereen",
+      "meaning": "everyone",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "op": {
+      "word": "op",
+      "lemma": "op",
+      "meaning": "on",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dag": {
+      "word": "dag",
+      "lemma": "dag",
+      "meaning": "day",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stemmen": {
+      "word": "stemmen",
+      "lemma": "stemmen",
+      "meaning": "to vote",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eerste": {
+      "word": "eerste",
+      "lemma": "eerste",
+      "meaning": "first",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stemdag": {
+      "word": "stemdag",
+      "lemma": "stemdag",
+      "meaning": "voting day",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "was": {
+      "word": "was",
+      "lemma": "zijn",
+      "meaning": "was",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "april": {
+      "word": "april",
+      "lemma": "april",
+      "meaning": "April",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "laatste": {
+      "word": "laatste",
+      "lemma": "laatst",
+      "meaning": "last",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "juni": {
+      "word": "juni",
+      "lemma": "juni",
+      "meaning": "June",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zeven": {
+      "word": "zeven",
+      "lemma": "zeven",
+      "meaning": "seven",
+      "partOfSpeech": "numeral",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stemdagen": {
+      "word": "stemdagen",
+      "lemma": "stemdag",
+      "meaning": "voting days",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "telden": {
+      "word": "telden",
+      "lemma": "tellen",
+      "meaning": "counted",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ongeveer": {
+      "word": "ongeveer",
+      "lemma": "ongeveer",
+      "meaning": "approximately",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "Er waren ongeveer twintig mensen.",
+      "exampleEn": "There were approximately twenty people."
+    },
+    "kiezers": {
+      "word": "kiezers",
+      "lemma": "kiezer",
+      "meaning": "voters",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "veel": {
+      "word": "veel",
+      "lemma": "veel",
+      "meaning": "many",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "liepen": {
+      "word": "liepen",
+      "lemma": "lopen",
+      "meaning": "walked",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "naar": {
+      "word": "naar",
+      "lemma": "naar",
+      "meaning": "to",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "stembureau": {
+      "word": "stembureau",
+      "lemma": "stembureau",
+      "meaning": "polling station",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "Het stembureau sluit om acht uur.",
+      "exampleEn": "The polling station closes at eight."
+    },
+    "hun": {
+      "word": "hun",
+      "lemma": "hun",
+      "meaning": "their",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "buurt": {
+      "word": "buurt",
+      "lemma": "buurt",
+      "meaning": "neighborhood",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "daar": {
+      "word": "daar",
+      "lemma": "daar",
+      "meaning": "there",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kozen": {
+      "word": "kozen",
+      "lemma": "kiezen",
+      "meaning": "chose",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zij": {
+      "word": "zij",
+      "lemma": "zij",
+      "meaning": "they",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kandidaat": {
+      "word": "kandidaat",
+      "lemma": "kandidaat",
+      "meaning": "candidate",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "partij": {
+      "word": "partij",
+      "lemma": "partij",
+      "meaning": "party",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "bjp": {
+      "word": "bjp",
+      "lemma": "BJP",
+      "meaning": "BJP",
+      "partOfSpeech": "name",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kreeg": {
+      "word": "kreeg",
+      "lemma": "krijgen",
+      "meaning": "received",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "meeste": {
+      "word": "meeste",
+      "lemma": "meest",
+      "meaning": "most",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geen": {
+      "word": "geen",
+      "lemma": "geen",
+      "meaning": "no",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "meerderheid": {
+      "word": "meerderheid",
+      "lemma": "meerderheid",
+      "meaning": "majority",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "werkte": {
+      "word": "werkte",
+      "lemma": "werken",
+      "meaning": "worked",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "met": {
+      "word": "met",
+      "lemma": "met",
+      "meaning": "with",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "andere": {
+      "word": "andere",
+      "lemma": "ander",
+      "meaning": "other",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "partijen": {
+      "word": "partijen",
+      "lemma": "partij",
+      "meaning": "parties",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "samen": {
+      "word": "samen",
+      "lemma": "samen",
+      "meaning": "together",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "groep": {
+      "word": "groep",
+      "lemma": "groep",
+      "meaning": "group",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heet": {
+      "word": "heet",
+      "lemma": "heten",
+      "meaning": "is called",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "Hoe heet jouw hond?",
+      "exampleEn": "What is your dog called?"
+    },
+    "nda": {
+      "word": "nda",
+      "lemma": "NDA",
+      "meaning": "NDA",
+      "partOfSpeech": "name",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "president": {
+      "word": "president",
+      "lemma": "president",
+      "meaning": "president",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "koos": {
+      "word": "koos",
+      "lemma": "kiezen",
+      "meaning": "chose",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "narendra": {
+      "word": "narendra",
+      "lemma": "Narendra",
+      "meaning": "Narendra",
+      "partOfSpeech": "name",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "modi": {
+      "word": "modi",
+      "lemma": "Modi",
+      "meaning": "Modi",
+      "partOfSpeech": "name",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "als": {
+      "word": "als",
+      "lemma": "als",
+      "meaning": "as",
+      "partOfSpeech": "conjunction",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "premier": {
+      "word": "premier",
+      "lemma": "premier",
+      "meaning": "prime minister",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heeft": {
+      "word": "heeft",
+      "lemma": "hebben",
+      "meaning": "has",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hij": {
+      "word": "hij",
+      "lemma": "hij",
+      "meaning": "he",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eed": {
+      "word": "eed",
+      "lemma": "eed",
+      "meaning": "oath",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "Zij legde de eed af.",
+      "exampleEn": "She took the oath."
+    },
+    "afgelegd": {
+      "word": "afgelegd",
+      "lemma": "afleggen",
+      "meaning": "taken",
+      "partOfSpeech": "verb",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "derde": {
+      "word": "derde",
+      "lemma": "derde",
+      "meaning": "third",
+      "partOfSpeech": "numeral",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "keer": {
+      "word": "keer",
+      "lemma": "keer",
+      "meaning": "time",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    }
+  },
+  "sentenceTranslations": [
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 0,
+      "dutch": "In 2024 waren er grote verkiezingen in India.",
+      "english": "In 2024, there were major elections in India."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 1,
+      "dutch": "Mensen stemden voor de Lok Sabha.",
+      "english": "People voted for the Lok Sabha."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 2,
+      "dutch": "Dat is een deel van het parlement.",
+      "english": "That is part of the parliament."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 3,
+      "dutch": "Er zijn 543 plaatsen.",
+      "english": "There are 543 seats."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 4,
+      "dutch": "Elke plaats kiest één persoon.",
+      "english": "Each seat elects one person."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 5,
+      "dutch": "Deze mensen maken wetten voor India.",
+      "english": "These people make laws for India."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 6,
+      "dutch": "India is heel groot.",
+      "english": "India is very large."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 7,
+      "dutch": "Daarom kon niet iedereen op één dag stemmen.",
+      "english": "Therefore, not everyone could vote on one day."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 0,
+      "dutch": "De eerste stemdag was 19 april.",
+      "english": "The first voting day was April 19."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 1,
+      "dutch": "De laatste was 1 juni.",
+      "english": "The last one was June 1."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 2,
+      "dutch": "Er waren zeven stemdagen.",
+      "english": "There were seven voting days."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 3,
+      "dutch": "Op 4 juni telden mensen de stemmen.",
+      "english": "On June 4, people counted the votes."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 4,
+      "dutch": "Ongeveer 66 van de 100 kiezers stemden.",
+      "english": "About 66 out of 100 voters voted."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 5,
+      "dutch": "Veel mensen liepen naar een stembureau in hun buurt.",
+      "english": "Many people walked to a polling station in their neighborhood."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 6,
+      "dutch": "Daar kozen zij een kandidaat.",
+      "english": "There, they chose a candidate."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 0,
+      "dutch": "De partij BJP kreeg de meeste plaatsen: 240.",
+      "english": "The BJP party won the most seats: 240."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 1,
+      "dutch": "Dat was geen meerderheid voor één partij.",
+      "english": "That was not a majority for one party."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 2,
+      "dutch": "Daarom werkte de BJP met andere partijen samen.",
+      "english": "Therefore, the BJP worked together with other parties."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 3,
+      "dutch": "Deze groep heet de NDA.",
+      "english": "This group is called the NDA."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 4,
+      "dutch": "De president koos Narendra Modi als premier.",
+      "english": "The president chose Narendra Modi as prime minister."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 5,
+      "dutch": "Op 9 juni heeft hij de eed afgelegd.",
+      "english": "On June 9, he took the oath of office."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 6,
+      "dutch": "Dat is zijn derde keer als premier.",
+      "english": "This is his third time as prime minister."
+    }
+  ],
+  "state": {
+    "read": false,
+    "favourite": false,
+    "notes": ""
+  },
+  "generation": {
+    "storyModel": "gpt-5.6-terra",
+    "storyReasoning": "high",
+    "annotationModel": "gpt-5.6-luna",
+    "annotationReasoning": "low",
+    "translationModel": "gpt-5.6-luna",
+    "translationReasoning": "low"
+  },
+  "createdAt": "2026-09-02T19:23:41.827Z",
+  "updatedAt": "2026-09-02T19:23:41.827Z"
+}

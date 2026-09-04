@@ -1,0 +1,1018 @@
+{
+  "schemaVersion": 2,
+  "id": "20260902191323-nieuwe-begroting-bijna-klaar-df781e",
+  "request": {
+    "type": "news",
+    "topic": "netherlands",
+    "genre": "slice-of-life",
+    "idea": "the current budget",
+    "level": "A1",
+    "length": "short"
+  },
+  "title": "Nieuwe begroting bijna klaar",
+  "subtitle": "Het kabinet toont de plannen op 15 september",
+  "summaryEnglish": "A short A1 Dutch news text about the Dutch coalition’s new budget plans for next year.",
+  "paragraphs": [
+    "De regering heeft een nieuwe begroting gemaakt. Een begroting is een plan voor geld. Het plan is voor volgend jaar. De partijen D66, VVD en CDA hebben lang gepraat. Op maandag 31 augustus waren zij het eens. Dit nieuws kwam op 1 september. Het kabinet heeft geen meerderheid in de Tweede Kamer.",
+    "Minister Eelco Heinen maakt de begroting. Hij is minister van Financiën. Premier Rob Jetten zegt dat de plannen naar de Raad van State gaan. Deze raad geeft advies over wetten en plannen. De regering wil ook praten met andere partijen. Die partijen kunnen later de plannen steunen of veranderen.",
+    "De begroting komt op dinsdag 15 september. Dat is Prinsjesdag. Dan geeft Heinen de Miljoenennota aan de Tweede Kamer in Den Haag. Daarin staat waar de regering geld aan wil geven. De regering wil geld voor onderwijs, defensie, boeren en natuur. De Tweede Kamer praat daarna over het plan. Daarom is steun van andere partijen belangrijk."
+  ],
+  "tags": [
+    "nieuws",
+    "Nederland",
+    "begroting",
+    "Prinsjesdag"
+  ],
+  "sources": [
+    {
+      "title": "Coalitie haalt begrotingsdeadline, maar van opluchting is nog geen sprake",
+      "publisher": "NPO Radio 1 / NOS",
+      "url": "https://www.nporadio1.nl/fragmenten/nos-radio-1-journaal/01a05b52-59a5-7009-9ad7-1110f15f0ef6/2026-09-01-coalitie-haalt-begrotingsdeadline-maar-van-opluchting-is-nog-geen-sprake",
+      "publishedAt": "2026-09-01",
+      "retrievedAt": "2026-09-02T19:13:23.949Z"
+    },
+    {
+      "title": "Letterlijke tekst persconferentie na ministerraad 28 augustus 2026",
+      "publisher": "Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/documenten/2026/08/28/letterlijke-tekst-persconferentie-na-ministerraad-28-augustus-2026",
+      "publishedAt": "2026-08-28",
+      "retrievedAt": "2026-09-02T19:13:23.949Z"
+    },
+    {
+      "title": "Prinsjesdag 2026 te volgen op alle platformen",
+      "publisher": "NOS",
+      "url": "https://over.nos.nl/nieuws/prinsjesdag-2026-te-volgen-op-alle-platformen/",
+      "publishedAt": "2026-08-26",
+      "retrievedAt": "2026-09-02T19:13:23.949Z"
+    }
+  ],
+  "wordCount": 154,
+  "readingMinutes": 2,
+  "annotations": {
+    "de": {
+      "word": "de",
+      "lemma": "de",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "regering": {
+      "word": "regering",
+      "lemma": "regering",
+      "meaning": "government",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heeft": {
+      "word": "heeft",
+      "lemma": "hebben",
+      "meaning": "has",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "een": {
+      "word": "een",
+      "lemma": "een",
+      "meaning": "a",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nieuwe": {
+      "word": "nieuwe",
+      "lemma": "nieuw",
+      "meaning": "new",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "begroting": {
+      "word": "begroting",
+      "lemma": "begroting",
+      "meaning": "budget",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "De begroting is klaar.",
+      "exampleEn": "The budget is ready."
+    },
+    "gemaakt": {
+      "word": "gemaakt",
+      "lemma": "maken",
+      "meaning": "made",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "is": {
+      "word": "is",
+      "lemma": "zijn",
+      "meaning": "is",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plan": {
+      "word": "plan",
+      "lemma": "plan",
+      "meaning": "plan",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "voor": {
+      "word": "voor",
+      "lemma": "voor",
+      "meaning": "for",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geld": {
+      "word": "geld",
+      "lemma": "geld",
+      "meaning": "money",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "het": {
+      "word": "het",
+      "lemma": "het",
+      "meaning": "the",
+      "partOfSpeech": "article",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "volgend": {
+      "word": "volgend",
+      "lemma": "volgend",
+      "meaning": "next",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "jaar": {
+      "word": "jaar",
+      "lemma": "jaar",
+      "meaning": "year",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "partijen": {
+      "word": "partijen",
+      "lemma": "partij",
+      "meaning": "parties",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "d": {
+      "word": "d",
+      "lemma": "D66",
+      "meaning": "D66",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "vvd": {
+      "word": "vvd",
+      "lemma": "VVD",
+      "meaning": "VVD",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "en": {
+      "word": "en",
+      "lemma": "en",
+      "meaning": "and",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "cda": {
+      "word": "cda",
+      "lemma": "CDA",
+      "meaning": "CDA",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hebben": {
+      "word": "hebben",
+      "lemma": "hebben",
+      "meaning": "have",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "lang": {
+      "word": "lang",
+      "lemma": "lang",
+      "meaning": "a long time",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gepraat": {
+      "word": "gepraat",
+      "lemma": "praten",
+      "meaning": "talked",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "op": {
+      "word": "op",
+      "lemma": "op",
+      "meaning": "on",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "maandag": {
+      "word": "maandag",
+      "lemma": "maandag",
+      "meaning": "Monday",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "augustus": {
+      "word": "augustus",
+      "lemma": "augustus",
+      "meaning": "August",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "waren": {
+      "word": "waren",
+      "lemma": "zijn",
+      "meaning": "were",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zij": {
+      "word": "zij",
+      "lemma": "zij",
+      "meaning": "they",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eens": {
+      "word": "eens",
+      "lemma": "eens",
+      "meaning": "in agreement",
+      "partOfSpeech": "adjective",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dit": {
+      "word": "dit",
+      "lemma": "dit",
+      "meaning": "this",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "nieuws": {
+      "word": "nieuws",
+      "lemma": "nieuws",
+      "meaning": "news",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kwam": {
+      "word": "kwam",
+      "lemma": "komen",
+      "meaning": "came",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "september": {
+      "word": "september",
+      "lemma": "september",
+      "meaning": "September",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kabinet": {
+      "word": "kabinet",
+      "lemma": "kabinet",
+      "meaning": "cabinet",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geen": {
+      "word": "geen",
+      "lemma": "geen",
+      "meaning": "no",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "meerderheid": {
+      "word": "meerderheid",
+      "lemma": "meerderheid",
+      "meaning": "majority",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "De partij heeft een meerderheid.",
+      "exampleEn": "The party has a majority."
+    },
+    "in": {
+      "word": "in",
+      "lemma": "in",
+      "meaning": "in",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "tweede": {
+      "word": "tweede",
+      "lemma": "tweede",
+      "meaning": "Second",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kamer": {
+      "word": "kamer",
+      "lemma": "kamer",
+      "meaning": "Chamber",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "minister": {
+      "word": "minister",
+      "lemma": "minister",
+      "meaning": "minister",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "eelco": {
+      "word": "eelco",
+      "lemma": "Eelco",
+      "meaning": "Eelco",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "heinen": {
+      "word": "heinen",
+      "lemma": "Heinen",
+      "meaning": "Heinen",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "maakt": {
+      "word": "maakt",
+      "lemma": "maken",
+      "meaning": "makes",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "hij": {
+      "word": "hij",
+      "lemma": "hij",
+      "meaning": "he",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "van": {
+      "word": "van",
+      "lemma": "van",
+      "meaning": "of",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "financiën": {
+      "word": "financiën",
+      "lemma": "financiën",
+      "meaning": "finance",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "premier": {
+      "word": "premier",
+      "lemma": "premier",
+      "meaning": "prime minister",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "rob": {
+      "word": "rob",
+      "lemma": "Rob",
+      "meaning": "Rob",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "jetten": {
+      "word": "jetten",
+      "lemma": "Jetten",
+      "meaning": "Jetten",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "zegt": {
+      "word": "zegt",
+      "lemma": "zeggen",
+      "meaning": "says",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dat": {
+      "word": "dat",
+      "lemma": "dat",
+      "meaning": "that",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "plannen": {
+      "word": "plannen",
+      "lemma": "plan",
+      "meaning": "plans",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "naar": {
+      "word": "naar",
+      "lemma": "naar",
+      "meaning": "to",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "raad": {
+      "word": "raad",
+      "lemma": "raad",
+      "meaning": "council",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "state": {
+      "word": "state",
+      "lemma": "staat",
+      "meaning": "State",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "gaan": {
+      "word": "gaan",
+      "lemma": "gaan",
+      "meaning": "go",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "deze": {
+      "word": "deze",
+      "lemma": "deze",
+      "meaning": "this",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geeft": {
+      "word": "geeft",
+      "lemma": "geven",
+      "meaning": "gives",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "advies": {
+      "word": "advies",
+      "lemma": "advies",
+      "meaning": "advice",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "Zij geeft goed advies.",
+      "exampleEn": "She gives good advice."
+    },
+    "over": {
+      "word": "over",
+      "lemma": "over",
+      "meaning": "about",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "wetten": {
+      "word": "wetten",
+      "lemma": "wet",
+      "meaning": "laws",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "wil": {
+      "word": "wil",
+      "lemma": "willen",
+      "meaning": "wants",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "ook": {
+      "word": "ook",
+      "lemma": "ook",
+      "meaning": "also",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "praten": {
+      "word": "praten",
+      "lemma": "praten",
+      "meaning": "talk",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "met": {
+      "word": "met",
+      "lemma": "met",
+      "meaning": "with",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "andere": {
+      "word": "andere",
+      "lemma": "ander",
+      "meaning": "other",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "die": {
+      "word": "die",
+      "lemma": "die",
+      "meaning": "those",
+      "partOfSpeech": "pronoun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "kunnen": {
+      "word": "kunnen",
+      "lemma": "kunnen",
+      "meaning": "can",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "later": {
+      "word": "later",
+      "lemma": "later",
+      "meaning": "later",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "steunen": {
+      "word": "steunen",
+      "lemma": "steunen",
+      "meaning": "support",
+      "partOfSpeech": "verb",
+      "difficulty": "useful",
+      "exampleNl": "Veel mensen steunen het plan.",
+      "exampleEn": "Many people support the plan."
+    },
+    "of": {
+      "word": "of",
+      "lemma": "of",
+      "meaning": "or",
+      "partOfSpeech": "conjunction",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "veranderen": {
+      "word": "veranderen",
+      "lemma": "veranderen",
+      "meaning": "change",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "komt": {
+      "word": "komt",
+      "lemma": "komen",
+      "meaning": "comes",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dinsdag": {
+      "word": "dinsdag",
+      "lemma": "dinsdag",
+      "meaning": "Tuesday",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "prinsjesdag": {
+      "word": "prinsjesdag",
+      "lemma": "Prinsjesdag",
+      "meaning": "Budget Day",
+      "partOfSpeech": "name",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "dan": {
+      "word": "dan",
+      "lemma": "dan",
+      "meaning": "then",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "miljoenennota": {
+      "word": "miljoenennota",
+      "lemma": "Miljoenennota",
+      "meaning": "budget memorandum",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "aan": {
+      "word": "aan",
+      "lemma": "aan",
+      "meaning": "to",
+      "partOfSpeech": "preposition",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "den": {
+      "word": "den",
+      "lemma": "Den",
+      "meaning": "Den",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "haag": {
+      "word": "haag",
+      "lemma": "Haag",
+      "meaning": "Haag",
+      "partOfSpeech": "name",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "daarin": {
+      "word": "daarin",
+      "lemma": "daarin",
+      "meaning": "in it",
+      "partOfSpeech": "adverb",
+      "difficulty": "advanced",
+      "exampleNl": "Daarin staat de uitleg.",
+      "exampleEn": "The explanation is in it."
+    },
+    "staat": {
+      "word": "staat",
+      "lemma": "staan",
+      "meaning": "states",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "waar": {
+      "word": "waar",
+      "lemma": "waar",
+      "meaning": "where",
+      "partOfSpeech": "adverb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "geven": {
+      "word": "geven",
+      "lemma": "geven",
+      "meaning": "give",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "onderwijs": {
+      "word": "onderwijs",
+      "lemma": "onderwijs",
+      "meaning": "education",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "defensie": {
+      "word": "defensie",
+      "lemma": "defensie",
+      "meaning": "defense",
+      "partOfSpeech": "noun",
+      "difficulty": "advanced",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "boeren": {
+      "word": "boeren",
+      "lemma": "boer",
+      "meaning": "farmers",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "natuur": {
+      "word": "natuur",
+      "lemma": "natuur",
+      "meaning": "nature",
+      "partOfSpeech": "noun",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "praat": {
+      "word": "praat",
+      "lemma": "praten",
+      "meaning": "talks",
+      "partOfSpeech": "verb",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "daarna": {
+      "word": "daarna",
+      "lemma": "daarna",
+      "meaning": "afterwards",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "",
+      "exampleEn": ""
+    },
+    "daarom": {
+      "word": "daarom",
+      "lemma": "daarom",
+      "meaning": "therefore",
+      "partOfSpeech": "adverb",
+      "difficulty": "useful",
+      "exampleNl": "Daarom blijf ik thuis.",
+      "exampleEn": "Therefore I am staying home."
+    },
+    "steun": {
+      "word": "steun",
+      "lemma": "steun",
+      "meaning": "support",
+      "partOfSpeech": "noun",
+      "difficulty": "useful",
+      "exampleNl": "De regering krijgt steun.",
+      "exampleEn": "The government gets support."
+    },
+    "belangrijk": {
+      "word": "belangrijk",
+      "lemma": "belangrijk",
+      "meaning": "important",
+      "partOfSpeech": "adjective",
+      "difficulty": "common",
+      "exampleNl": "",
+      "exampleEn": ""
+    }
+  },
+  "sentenceTranslations": [
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 0,
+      "dutch": "De regering heeft een nieuwe begroting gemaakt.",
+      "english": "The government has made a new budget."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 1,
+      "dutch": "Een begroting is een plan voor geld.",
+      "english": "A budget is a plan for money."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 2,
+      "dutch": "Het plan is voor volgend jaar.",
+      "english": "The plan is for next year."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 3,
+      "dutch": "De partijen D66, VVD en CDA hebben lang gepraat.",
+      "english": "The parties D66, VVD, and CDA talked for a long time."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 4,
+      "dutch": "Op maandag 31 augustus waren zij het eens.",
+      "english": "On Monday, August 31, they agreed."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 5,
+      "dutch": "Dit nieuws kwam op 1 september.",
+      "english": "This news came on September 1."
+    },
+    {
+      "paragraphIndex": 0,
+      "sentenceIndex": 6,
+      "dutch": "Het kabinet heeft geen meerderheid in de Tweede Kamer.",
+      "english": "The cabinet does not have a majority in the House of Representatives."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 0,
+      "dutch": "Minister Eelco Heinen maakt de begroting.",
+      "english": "Minister Eelco Heinen is preparing the budget."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 1,
+      "dutch": "Hij is minister van Financiën.",
+      "english": "He is the Minister of Finance."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 2,
+      "dutch": "Premier Rob Jetten zegt dat de plannen naar de Raad van State gaan.",
+      "english": "Prime Minister Rob Jetten says that the plans will go to the Council of State."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 3,
+      "dutch": "Deze raad geeft advies over wetten en plannen.",
+      "english": "This council gives advice on laws and plans."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 4,
+      "dutch": "De regering wil ook praten met andere partijen.",
+      "english": "The government also wants to talk to other parties."
+    },
+    {
+      "paragraphIndex": 1,
+      "sentenceIndex": 5,
+      "dutch": "Die partijen kunnen later de plannen steunen of veranderen.",
+      "english": "Those parties can later support or change the plans."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 0,
+      "dutch": "De begroting komt op dinsdag 15 september.",
+      "english": "The budget will be presented on Tuesday, September 15."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 1,
+      "dutch": "Dat is Prinsjesdag.",
+      "english": "That is Prinsjesdag."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 2,
+      "dutch": "Dan geeft Heinen de Miljoenennota aan de Tweede Kamer in Den Haag.",
+      "english": "Then Heinen will present the Budget Memorandum to the House of Representatives in The Hague."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 3,
+      "dutch": "Daarin staat waar de regering geld aan wil geven.",
+      "english": "It states what the government wants to spend money on."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 4,
+      "dutch": "De regering wil geld voor onderwijs, defensie, boeren en natuur.",
+      "english": "The government wants to spend money on education, defense, farmers, and nature."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 5,
+      "dutch": "De Tweede Kamer praat daarna over het plan.",
+      "english": "The House of Representatives will then discuss the plan."
+    },
+    {
+      "paragraphIndex": 2,
+      "sentenceIndex": 6,
+      "dutch": "Daarom is steun van andere partijen belangrijk.",
+      "english": "That is why support from other parties is important."
+    }
+  ],
+  "state": {
+    "read": false,
+    "favourite": false,
+    "notes": ""
+  },
+  "generation": {
+    "storyModel": "gpt-5.6-terra",
+    "storyReasoning": "high",
+    "annotationModel": "gpt-5.6-luna",
+    "annotationReasoning": "low",
+    "translationModel": "gpt-5.6-luna",
+    "translationReasoning": "low"
+  },
+  "createdAt": "2026-09-02T19:14:25.010Z",
+  "updatedAt": "2026-09-02T19:14:25.010Z"
+}
