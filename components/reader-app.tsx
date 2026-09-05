@@ -2,19 +2,16 @@
 
 import {
   ArrowLeft,
-  BookOpen,
+  ArrowRight,
   Check,
   Clock3,
   ExternalLink,
-  GraduationCap,
   Heart,
   Languages,
-  Library,
   MessageCircle,
   Plus,
   Save,
   Send,
-  Sparkles,
   StickyNote,
 } from 'lucide-react';
 import {
@@ -361,7 +358,7 @@ function JobCard({
   );
 }
 
-function StoryCard({
+function StoryRow({
   item,
   onOpen,
 }: {
@@ -371,49 +368,48 @@ function StoryCard({
   return (
     <button
       type="button"
-      className="story-card group"
+      className="story-row"
       onClick={() => onOpen(item.id)}
+      aria-label={`Open ${item.title}`}
     >
-      <span className="flex items-start justify-between gap-4">
-        <span className="flex items-center gap-2">
-          <span className="rounded-md bg-level px-2 py-1 text-[11px] font-semibold text-level-foreground">
-            {item.level}
-          </span>
-          <span className="text-[11px] text-muted-foreground">
-            <span className="flex items-center gap-1.5">
-              {item.type === 'lesson' ? (
-                <GraduationCap className="size-3.5" />
-              ) : null}
-              {TYPE_LABELS[item.type]}
-            </span>
-          </span>
+      <span className="story-row-meta">
+        <span className="story-row-type">{TYPE_LABELS[item.type]}</span>
+        <span>
+          {item.level} <span aria-hidden="true">·</span> {item.readingMinutes}{' '}
+          min
         </span>
-        {item.favourite ? (
-          <Heart className="size-4 fill-current text-primary" />
-        ) : !item.read ? (
-          <span
-            className="mt-1 size-2 rounded-full bg-primary"
-            aria-label="Unread"
-          />
-        ) : null}
       </span>
-      <span className="mt-5 block font-serif text-[22px] font-medium leading-7 tracking-[-0.02em] group-hover:text-primary">
-        {item.title}
-      </span>
-      <span className="mt-2 line-clamp-2 block text-sm leading-6 text-muted-foreground">
-        {item.summaryEnglish || item.subtitle}
-      </span>
-      <span className="mt-6 flex items-center gap-4 border-t border-border/80 pt-4 text-[11px] text-muted-foreground">
-        <span className="flex items-center gap-1.5">
-          <Clock3 className="size-3.5" /> {item.readingMinutes} min
+      <span className="story-row-content">
+        <span className="story-row-title" lang="nl">
+          {item.title}
         </span>
-        <span>{item.read ? 'Read' : 'Unread'}</span>
-        {item.hasNotes ? (
-          <span className="ml-auto flex items-center gap-1.5">
-            <StickyNote className="size-3.5" /> Notes
+        <span className="story-row-summary">
+          {item.summaryEnglish || item.subtitle}
+        </span>
+      </span>
+      <span className="story-row-end">
+        <span className="story-row-state">
+          {item.read ? <Check className="size-3.5" aria-hidden="true" /> : null}
+          {item.read ? 'Read' : 'Unread'}
+        </span>
+        {item.favourite || item.hasNotes ? (
+          <span className="story-row-marks">
+            {item.favourite ? (
+              <span title="Favourite">
+                <Heart className="size-3.5 fill-current" aria-hidden="true" />
+                <span className="sr-only">Favourite</span>
+              </span>
+            ) : null}
+            {item.hasNotes ? (
+              <span title="Has notes">
+                <StickyNote className="size-3.5" aria-hidden="true" />
+                <span className="sr-only">Has notes</span>
+              </span>
+            ) : null}
           </span>
         ) : null}
       </span>
+      <ArrowRight className="story-row-arrow" aria-hidden="true" />
     </button>
   );
 }
@@ -439,18 +435,19 @@ function LibraryShelf({
 }) {
   const isLessons = section === 'lessons';
   const readCount = stories.filter((item) => item.read).length;
-  const favouriteCount = stories.filter((item) => item.favourite).length;
 
   return (
-    <section>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="grid w-full grid-cols-3 rounded-lg bg-muted p-0.5 sm:w-[300px]">
+    <section aria-label={isLessons ? 'Grammar lessons' : 'Reading texts'}>
+      <div className="library-toolbar">
+        <fieldset className="library-filters">
+          <legend className="sr-only">Filter library</legend>
           {(['all', 'unread', 'favourites'] as const).map((value) => (
             <button
               type="button"
               key={value}
               className={`filter-tab ${filter === value ? 'filter-tab-active' : ''}`}
               onClick={() => onFilter(value)}
+              aria-pressed={filter === value}
             >
               {value === 'all'
                 ? 'All'
@@ -459,50 +456,55 @@ function LibraryShelf({
                   : 'Favourites'}
             </button>
           ))}
-        </div>
-        <p className="text-xs text-muted-foreground">
-          {stories.length} saved · {readCount} read · {favouriteCount}{' '}
-          favourites
-        </p>
+        </fieldset>
+        <output className="library-count">
+          {loading
+            ? 'Loading library…'
+            : `${stories.length} saved · ${readCount} read`}
+        </output>
       </div>
 
       {loading ? (
-        <div className="flex min-h-64 items-center justify-center">
+        <div className="library-loading" aria-hidden="true">
           <span className="size-5 animate-spin rounded-full border-2 border-primary/25 border-t-primary" />
         </div>
       ) : visibleStories.length ? (
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="story-list">
           {visibleStories.map((item) => (
-            <StoryCard key={item.id} item={item} onOpen={onOpen} />
+            <li key={item.id}>
+              <StoryRow item={item} onOpen={onOpen} />
+            </li>
           ))}
-        </div>
+        </ul>
       ) : (
-        <div className="mt-6 flex min-h-72 flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/50 px-6 text-center">
-          <div className="flex size-11 items-center justify-center rounded-xl border border-border bg-background">
-            {isLessons ? (
-              <GraduationCap className="size-5 text-primary" />
-            ) : (
-              <Library className="size-5 text-primary" />
-            )}
-          </div>
-          <h2 className="mt-4 font-serif text-xl font-medium">
+        <div className="library-empty">
+          <h2>
             {stories.length
               ? `No ${isLessons ? 'lessons' : 'texts'} in this view`
               : isLessons
                 ? 'No grammar lessons yet'
-                : 'Your reading library is empty'}
+                : 'Your first text starts here'}
           </h2>
-          <p className="mt-2 max-w-sm text-sm leading-6 text-muted-foreground">
+          <p>
             {stories.length
               ? 'Try another filter to see the rest of this section.'
               : isLessons
-                ? 'Generate a focused Dutch grammar lesson at your current level.'
-                : 'Generate a Dutch text and it will be saved here automatically.'}
+                ? 'Choose a grammar topic to study at your level.'
+                : 'Choose a topic and a reading level to add a Dutch text.'}
           </p>
           {!stories.length ? (
-            <Button className="mt-5" onClick={onGenerate}>
-              <Plus /> {isLessons ? 'Generate a lesson' : 'Generate a text'}
+            <Button className="library-create mt-5" onClick={onGenerate}>
+              <Plus /> {isLessons ? 'New lesson' : 'New text'}
             </Button>
+          ) : filter !== 'all' ? (
+            <button
+              className="library-reset-filter"
+              type="button"
+              onClick={() => onFilter('all')}
+            >
+              {isLessons ? 'Show all lessons' : 'Show all texts'}{' '}
+              <ArrowRight aria-hidden="true" />
+            </button>
           ) : null}
         </div>
       )}
@@ -774,33 +776,27 @@ export function ReaderApp() {
   }
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-30 border-b border-border/80 bg-background/92 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-[1180px] items-center justify-between px-5 lg:px-8">
+    <main
+      className={`min-h-screen bg-background text-foreground ${view === 'library' ? 'library-view' : ''}`}
+    >
+      <header className="app-header">
+        <div className="app-header-inner">
           <button
             type="button"
-            className="flex items-center gap-3 text-left"
+            className="wordmark"
             onClick={returnToLibrary}
+            aria-label="Lees — back to library"
           >
-            <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <BookOpen className="size-4" />
-            </div>
-            <div>
-              <div className="text-[15px] font-semibold tracking-[-0.02em]">
-                Lees
-              </div>
-              <div className="text-[10px] text-muted-foreground">
-                Dutch reading
-              </div>
-            </div>
+            <span className="wordmark-name">
+              Lees<span className="wordmark-stop">.</span>
+            </span>
+            <span className="wordmark-description">Dutch reading</span>
           </button>
 
           {view === 'library' ? (
-            <Button size="sm" onClick={showGenerator}>
+            <Button className="library-create" onClick={showGenerator}>
               <Plus />
-              {librarySection === 'lessons'
-                ? 'Generate lesson'
-                : 'Generate text'}
+              {librarySection === 'lessons' ? 'New lesson' : 'New text'}
             </Button>
           ) : (
             <Button variant="ghost" size="sm" onClick={returnToLibrary}>
@@ -811,19 +807,8 @@ export function ReaderApp() {
       </header>
 
       {view === 'library' ? (
-        <div className="mx-auto max-w-[1180px] px-5 py-10 sm:py-14 lg:px-8">
-          <section className="border-b border-border pb-9">
-            <div>
-              <p className="eyebrow">Library</p>
-              <h1 className="mt-2 text-3xl font-semibold tracking-[-0.035em] sm:text-4xl">
-                Your Dutch library
-              </h1>
-              <p className="mt-3 max-w-xl text-sm leading-6 text-muted-foreground">
-                Read Dutch texts or study a focused grammar lesson at your
-                level.
-              </p>
-            </div>
-          </section>
+        <div className="library-main">
+          <h1 className="library-title">Library</h1>
 
           {error && !generateOpen ? (
             <p
@@ -837,7 +822,9 @@ export function ReaderApp() {
           {visibleJobs.length ? (
             <section className="mt-8" aria-live="polite">
               <div className="mb-3 flex items-center gap-2">
-                <FieldLabel>Generating</FieldLabel>
+                <span className="text-sm font-medium">
+                  {activeJobs.length ? 'Generating' : 'Generation failed'}
+                </span>
                 {activeJobs.length ? (
                   <span
                     className="status-dot"
@@ -854,28 +841,32 @@ export function ReaderApp() {
           ) : null}
 
           <Tabs
-            className="mt-10"
+            className="library-tabs"
             value={librarySection}
             onValueChange={(value) => {
               setLibrarySection(value as LibrarySection);
               setFilter('all');
             }}
           >
-            <TabsList className="h-10 w-full p-1 sm:w-auto">
-              <TabsTrigger value="reading" className="gap-2 px-4">
-                <BookOpen /> Reading
-                <span className="rounded-full bg-background/80 px-1.5 text-xs text-muted-foreground">
+            <TabsList
+              variant="line"
+              className="library-nav"
+              aria-label="Library sections"
+            >
+              <TabsTrigger value="reading" className="library-section-tab">
+                Reading
+                <span className="library-section-count">
                   {readingStories.length}
                 </span>
               </TabsTrigger>
-              <TabsTrigger value="lessons" className="gap-2 px-4">
-                <GraduationCap /> Lessons
-                <span className="rounded-full bg-background/80 px-1.5 text-xs text-muted-foreground">
+              <TabsTrigger value="lessons" className="library-section-tab">
+                Lessons
+                <span className="library-section-count">
                   {lessonStories.length}
                 </span>
               </TabsTrigger>
             </TabsList>
-            <TabsContent value="reading" className="mt-6">
+            <TabsContent value="reading">
               <LibraryShelf
                 stories={readingStories}
                 visibleStories={visibleReadingStories}
@@ -887,7 +878,7 @@ export function ReaderApp() {
                 onGenerate={showGenerator}
               />
             </TabsContent>
-            <TabsContent value="lessons" className="mt-6">
+            <TabsContent value="lessons">
               <LibraryShelf
                 stories={lessonStories}
                 visibleStories={visibleLessonStories}
@@ -1054,13 +1045,13 @@ export function ReaderApp() {
       )}
 
       <Dialog open={generateOpen} onOpenChange={setGenerateOpen}>
-        <DialogContent className="max-h-[90vh] overflow-y-auto p-0 sm:max-w-[560px]">
+        <DialogContent className="generator-dialog max-h-[90vh] overflow-y-auto p-0 sm:max-w-[560px]">
           <form onSubmit={submitGeneration}>
             <DialogHeader className="px-5 pt-5 pr-12 sm:px-6 sm:pt-6">
-              <DialogTitle className="text-lg">
+              <DialogTitle className="font-serif text-2xl leading-tight">
                 {request.type === 'lesson'
-                  ? 'Generate a grammar lesson'
-                  : 'Generate a Dutch text'}
+                  ? 'New grammar lesson'
+                  : 'New Dutch text'}
               </DialogTitle>
               <DialogDescription>
                 {request.type === 'lesson'
@@ -1268,7 +1259,7 @@ export function ReaderApp() {
                 {submitting ? (
                   <span className="size-4 animate-spin rounded-full border-2 border-current/25 border-t-current" />
                 ) : (
-                  <Sparkles />
+                  <ArrowRight />
                 )}
                 {request.type === 'lesson'
                   ? 'Generate lesson'
